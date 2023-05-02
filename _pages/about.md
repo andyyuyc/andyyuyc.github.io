@@ -11,7 +11,7 @@ redirect_from:
   - /about.html
 ---
 <br>
-<br>
+<br></br>
 Education
 ======
 * <b>University of Wisconsin–Madison</b>
