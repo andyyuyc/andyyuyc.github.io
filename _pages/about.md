@@ -27,7 +27,7 @@ redirect_from:
 <i>Enrolled in B.S. in Data Science</i>                      
   * Majored in Data Science and Big Data Analytics (GPA: 3.9)
 
-Experience
+<br>Experience
 ======
 * <b>Schneider Electric</b>                                                
 <i>Shanghai, China</i>
@@ -41,7 +41,7 @@ Experience
   * Designed digital solutions for energy systems based on industrial application scenarios
   * Implemented analysis system with Python and R with machine learning for data processing
 
-Projects
+<br>Projects
 ======
 * <b>Warning and Route Recommendation System for Roads with High Accident Rates</b>
   * Based on Flutter, run on both Android and Apple platforms and is available on the App Store and Google Play
