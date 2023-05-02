@@ -30,7 +30,7 @@ redirect_from:
   * Nondegree Program: Information and Communications Security Program/Internet of things Program
 
 * <b>Providence University</b>  
-<br><i>(2019-2020)</i>              
+<i>(2019-2020)</i>              
 <i>Enrolled in B.S. in Data Science</i>                      
   * Majored in Data Science and Big Data Analytics (GPA: 3.9)
 
