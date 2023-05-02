@@ -17,7 +17,7 @@ redirect_from:
 * <b>University of Wisconsin–Madison</b>
 <br><i>Visiting International Student Program</i>                  
 
-
+<p><br></p>
 * <b>Feng Chia University</b>                              
 <br><i>B.S. in Computer Science</i>                                 
   * Majored in Information Engineering and Computer Science, GPA 3.6
