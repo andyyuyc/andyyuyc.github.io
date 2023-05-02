@@ -14,7 +14,7 @@ redirect_from:
 
 Education
 ======
-* University of Wisconsin–Madison                                   Madison, USA
+<b>* University of Wisconsin–Madison</b>                            Madison, USA
 <br><i>Visiting International Student Program</i>                   2023.1-2023.6
 
 * Feng Chia University                                              Taichung, Taiwan
@@ -29,13 +29,13 @@ Education
 
 Experience
 ======
-* Schneider Electric Shanghai, China
-* Internship 2022.7-2022.8
+* Schneider Electric                                                Shanghai, China
+<br><i>Internship</i>                                               2022.7-2022.8
   * Provided technical support for the national sales department and conduct negotiations with clients
   * Customized special electric equipments and corresponding parameters to satisfy various clients needs
    
-* ABB Xiamen Low Voltage Equipment Co., Ltd. Xiamen, China
-* Internship 2022.6-2022.7
+* ABB Xiamen Low Voltage Equipment Co., Ltd.                        Xiamen, China
+<br><i>Internship</i>                                               2022.6-2022.7
   * Designed digital solutions for energy systems based on industrial application scenarios
   * Implemented analysis system with Python and R with machine learning for data processing
 
