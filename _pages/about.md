@@ -14,8 +14,8 @@ redirect_from:
 
 Education
 ======
-* <b>University of Wisconsin–Madison</b><pre>Madison, USA</pre>
-<br><i>Visiting International Student Program</i>2023.1-2023.6
+* <b>University of Wisconsin–Madison</b>                            Madison, USA
+<br><i>Visiting International Student Program</i>                   2023.1-2023.6
 
 * Feng Chia University                                              Taichung, Taiwan
 <br><i>B.S. in Computer Science</i>                                 2020.9-2023.6
