@@ -14,17 +14,17 @@ redirect_from:
 
 Education
 ======
-* <b>University of Wisconsin–Madison</b><small>Madison, USA</small>
-<br><i>Visiting International Student Program</i>                   2023.1-2023.6
+* <b>University of Wisconsin–Madison</b>
+<br><i>Visiting International Student Program</i>                  
 
-* Feng Chia University                                              Taichung, Taiwan
-<br><i>B.S. in Computer Science</i>                                 2020.9-2023.6
+* <b>Feng Chia University</b>                              
+<br><i>B.S. in Computer Science</i>                                 
   * Majored in Information Engineering and Computer Science, GPA 3.6
   * Certificate - Collegiate Programming Examination Top 30% in Computer Science Group
   * Nondegree Program: Information and Communications Security Program/Internet of things Program
 
-* Providence University                                             Taichung ,Taiwan
-<br><i>Enrolled in B.S. in Data Science</i>                         2019.9-2020.6
+* <b>Providence University</b>              
+<br><i>Enrolled in B.S. in Data Science</i>                      
   * Majored in Data Science and Big Data Analytics (GPA: 3.9)
 
 Experience
