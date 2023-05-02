@@ -6,6 +6,6 @@ collection: Project
 
 Because I am a very avid jersey collector. Suddenly one day I ran into an unexpected problem. I had started to forget which jerseys I had bought. So I spent one afternoon and evening to make this simple app and it was successfully launched on the AppStore, which is my first app to be launched on the AppStore.
 
-[Download App Here]([http://andyyuyc.github.io/files/project1.pdf](https://apps.apple.com/us/app/myjersey/id6446954912?l=zh))
+[Download App Here](https://apps.apple.com/us/app/myjersey/id6446954912)
 
 
