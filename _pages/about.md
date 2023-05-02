@@ -15,6 +15,7 @@ redirect_from:
 Education
 ======
 * <p><b>University of Wisconsin–Madison</b>&#9;&#9;&#9;&#9;Madison, USA</p>
+* <p><span style="font-weight:bold;">University of Wisconsin–Madison</span>&#9;Madison, USA</p>
 * <pre><b>University of Wisconsin–Madison</b>        Madison, USA</pre>
 * <b>University of Wisconsin–Madison</b>Madison, USA
 <br><i>Visiting International Student Program</i>                   2023.1-2023.6
