@@ -1,6 +1,6 @@
 ---
 title: "Travel in Peace"
-excerpt: "Warning and Route Recommendation System for Roads with High Accident Rates<br/><img src='/images/icon-1024.png'>"
+excerpt: "Warning and Route Recommendation System for Roads with High Accident Rates<br/><img src='/images/project1.png'>"
 collection: Project
 ---
 
