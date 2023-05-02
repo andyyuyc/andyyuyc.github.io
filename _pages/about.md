@@ -15,7 +15,7 @@ redirect_from:
 <br>Education
 ======
 * <b>University of Wisconsin–Madison</b>
-<i>Visiting International Student Program</i>                  
+<br><i>Visiting International Student Program</i>                  
 
 * <b>Feng Chia University</b>                              
 <i>B.S. in Computer Science</i>                                 
