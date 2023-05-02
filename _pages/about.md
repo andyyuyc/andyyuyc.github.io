@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "academicpages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: "Yichen(Andy) YU"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
@@ -8,22 +8,42 @@ redirect_from:
   - /about.html
 ---
 
-This is the front page of a website that is powered by the [academicpages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the respository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this repository](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads! An older version of this template powers my own personal website at [stuartgeiger.com](http://stuartgeiger.com), which uses [this Github repository](https://github.com/staeiou/staeiou.github.io).
 
-A data-driven personal website
+Education
 ======
-Like many other Jekyll-based GitHub Pages templates, academicpages makes you separate the website's content from its form. The content & metadata of your website are in structured markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
+* University of Wisconsin–Madison Madison, USA
+  * Visiting International Student Program 2023.1-2023.6
 
-Many of the features of dynamic content management systems (like Wordpress) can be achieved in this fashion, using a fraction of the computational resources and with far less vulnerability to hacking and DDoSing. You can also modify the theme to your heart's content without touching the content of your site. If you get to a point where you've broken something in Jekyll/HTML/CSS beyond repair, your markdown files describing your talks, publications, etc. are safe. You can rollback the changes or even delete the repository and start over -- just be sure to save the markdown files! Finally, you can also write scripts that process the structured data on the site, such as [this one](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb) that analyzes metadata in pages about talks to display [a map of every location you've given a talk](https://academicpages.github.io/talkmap.html).
+* Feng Chia University Taichung, Taiwan
+* Bachelor of Science 2020.9-2023.6
+  * Majored in Information Engineering and Computer Science, GPA 3.6
+  * Certificate - Collegiate Programming Examination Top 30% in Computer Science Group
+  * Nondegree Program: Information and Communications Security Program/Internet of things Program
 
-Getting started
+* Providence University Taichung ,Taiwan
+  * Enrolled in Bachelor of Science 2019.9-2020.6
+
+Experience
 ======
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Fork [this repository](https://github.com/academicpages/academicpages.github.io) by clicking the "fork" button in the top right. 
-1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](http://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
+* Schneider Electric Shanghai, China
+* Internship 2022.7-2022.8
+  * Provided technical support for the national sales department and conduct negotiations with clients
+  * Customized special electric equipments and corresponding parameters to satisfy various clients needs
+* ABB Xiamen Low Voltage Equipment Co., Ltd. Xiamen, China
+* Internship 2022.6-2022.7
+  * Designed digital solutions for energy systems based on industrial application scenarios
+  * Implemented analysis system with Python and R with machine learning for data processing
+
+Projects
+======
+* Warning and Route Recommendation System for Roads with High Accident Rates
+  * Based on Flutter, run on both Android and Apple platforms and is available on the App Store and Google Play
+  * Utilized the data on traffic accidents in Taichung provided by the government's open data platform to classify the accidents that occurred at different periods by time and weather
+  * Generated the most frequent characteristics of induced accidents from them
+* AFC Women's Asian Cup 2022 Chinese Taipei Team Match Statistics
+  * Participated in the post-match statistical analysis of Thailand vs. Indonesia (January 24, 2022), Thailand vs. Australia (January 27, 2022) and Chinese Taipei vs. the Philippines (January 30, 2022)
+  * Statistics in seconds for on-court events such as possession changes, play changes, etc. that occur during the game
+  * Cued the team as to which specific plays the opponent will use at which points in time and try to identify the slogans or hand signals that the opponent will use to change plays with the help of assisted technology
 
 Site-wide configuration
 ------
