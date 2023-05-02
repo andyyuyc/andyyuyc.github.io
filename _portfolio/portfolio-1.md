@@ -1,5 +1,5 @@
 ---
-title: "Travel in peace"
+title: "Travel in Peace"
 excerpt: "Warning and Route Recommendation System for Roads with High Accident Rates<br/><img src='/images/icon-1024.png'>"
 collection: Project
 ---
