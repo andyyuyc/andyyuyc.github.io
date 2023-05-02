@@ -16,7 +16,7 @@ Education
 ======
 * <b>University of Wisconsin–Madison</b><pre><p>&#9;&#9;&#9;&#9;&#9;&#9;Madison, USA</p></pre>
 * <pre><b>University of Wisconsin–Madison</b>        Madison, USA</pre>
-* <b>University of Wisconsin–Madison</b>&nbmp;&nbmp;&nbmp;Madison, USA
+* <b>University of Wisconsin–Madison</b>&nbmp;Madison, USA
 <br><i>Visiting International Student Program</i>                   2023.1-2023.6
 
 * Feng Chia University                                              Taichung, Taiwan
