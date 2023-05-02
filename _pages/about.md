@@ -70,8 +70,8 @@ redirect_from:
 <br>Skills and Interests
 ======
 <b>Programming</b>: R, Python, C, Dart, Swift, SQL, Java, C++, Stat, HTML
-<b>Language</b>: English, Mandarin
-<b>Interests</b>: Software Development, Technical Innovation, Data Processing, Github
+<br><b>Language</b>: English, Mandarin
+<br><b>Interests</b>: Software Development, Technical Innovation, Data Processing, Github
 
 **Markdown generator**
 
