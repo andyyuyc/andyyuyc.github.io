@@ -22,6 +22,7 @@ redirect_from:
   * Majored in Information Engineering and Computer Science, GPA 3.6
   * Certificate - Collegiate Programming Examination Top 30% in Computer Science Group
   * Nondegree Program: Information and Communications Security Program/Internet of things Program
+<br>
 
 * <b>Providence University</b>              
 <i>Enrolled in B.S. in Data Science</i>                      
