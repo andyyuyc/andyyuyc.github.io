@@ -43,12 +43,12 @@ Experience
 
 Projects
 ======
-* Warning and Route Recommendation System for Roads with High Accident Rates
+* <b>Warning and Route Recommendation System for Roads with High Accident Rates</b>
   * Based on Flutter, run on both Android and Apple platforms and is available on the App Store and Google Play
   * Utilized the data on traffic accidents in Taichung provided by the government's open data platform to classify the accidents that occurred at different periods by time and weather
   * Generated the most frequent characteristics of induced accidents from them
   
-* AFC Women's Asian Cup 2022 Chinese Taipei Team Match Statistics
+* <b>AFC Women's Asian Cup 2022 Chinese Taipei Team Match Statistics</b>
   * Participated in the post-match statistical analysis of Thailand vs. Indonesia (January 24, 2022), Thailand vs. Australia (January 27, 2022) and Chinese Taipei vs. the Philippines (January 30, 2022)
   * Statistics in seconds for on-court events such as possession changes, play changes, etc. that occur during the game
   * Cued the team as to which specific plays the opponent will use at which points in time and try to identify the slogans or hand signals that the opponent will use to change plays with the help of assisted technology
