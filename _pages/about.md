@@ -31,8 +31,8 @@ redirect_from:
 Experience
 ======
 * <b>Schneider Electric</b>                                                
-<br><i>Shanghai, China</i>
-<br><i>Internship</i>                                               
+<i>Shanghai, China</i>
+<i>Internship</i>                                               
   * Provided technical support for the national sales department and conduct negotiations with clients
   * Customized special electric equipments and corresponding parameters to satisfy various clients needs
    
