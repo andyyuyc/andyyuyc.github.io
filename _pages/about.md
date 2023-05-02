@@ -14,7 +14,7 @@ redirect_from:
 
 <br>Education
 ======
-* <b>University of Rochester.               (2023~)</b>
+* <b>University of Rochester  (2023~)</b>
 <br><i>Master of Science in Computer Science</i>   
 
 * <b>University of Wisconsin–Madison</b>
