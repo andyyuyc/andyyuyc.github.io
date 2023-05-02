@@ -36,7 +36,7 @@ Experience
   * Customized special electric equipments and corresponding parameters to satisfy various clients needs
    
 * <b>ABB Xiamen Low Voltage Equipment Co., Ltd.</b>  
-<br><i>Xiamen, China</i>
+<i>Xiamen, China</i>
 <br><i>Internship</i>                                               
   * Designed digital solutions for energy systems based on industrial application scenarios
   * Implemented analysis system with Python and R with machine learning for data processing
