@@ -16,8 +16,7 @@ Education
 * Ph.D in Version Control Theory, GitHub University, 2018 (expected)
 
 * University of Wisconsin–Madison Madison, USA
-* Visiting International Student Program 2023.1-2023.6
-*     Courses: Computer science; Data science programming
+*   Visiting International Student Program 2023.1-2023.6
 
 * Feng Chia University Taichung, Taiwan
 * Bachelor of Science 2020.9-2023.6
