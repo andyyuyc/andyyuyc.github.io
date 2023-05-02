@@ -29,13 +29,15 @@ redirect_from:
 
 Experience
 ======
-* Schneider Electric                                                Shanghai, China
-<br><i>Internship</i>                                               2022.7-2022.8
+* Schneider Electric                                                
+<br><i>Shanghai, China</i>
+<br><i>Internship</i>                                               
   * Provided technical support for the national sales department and conduct negotiations with clients
   * Customized special electric equipments and corresponding parameters to satisfy various clients needs
    
-* ABB Xiamen Low Voltage Equipment Co., Ltd.                        Xiamen, China
-<br><i>Internship</i>                                               2022.6-2022.7
+* ABB Xiamen Low Voltage Equipment Co., Ltd.  
+<br><i>Xiamen, China</i>
+<br><i>Internship</i>                                               
   * Designed digital solutions for energy systems based on industrial application scenarios
   * Implemented analysis system with Python and R with machine learning for data processing
 
