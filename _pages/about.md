@@ -15,7 +15,7 @@ Education
   * Visiting International Student Program 2023.1-2023.6
 
 * Feng Chia University Taichung, Taiwan
-* Bachelor of Science 2020.9-2023.6
+*Bachelor of Science 2020.9-2023.6
   * Majored in Information Engineering and Computer Science, GPA 3.6
   * Certificate - Collegiate Programming Examination Top 30% in Computer Science Group
   * Nondegree Program: Information and Communications Security Program/Internet of things Program
