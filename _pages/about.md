@@ -32,7 +32,7 @@ Experience
 ======
 * <b>Schneider Electric</b>                                                
 <i>Shanghai, China</i>
-<i>Internship</i>                                               
+<br><i>Internship</i>                                               
   * Provided technical support for the national sales department and conduct negotiations with clients
   * Customized special electric equipments and corresponding parameters to satisfy various clients needs
    
