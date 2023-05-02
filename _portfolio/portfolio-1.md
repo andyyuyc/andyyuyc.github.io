@@ -1,6 +1,10 @@
 ---
 title: "Travel in Peace"
+<<<<<<< Updated upstream
 excerpt: "Warning and Route Recommendation System for Roads with High Accident Rates<br/><img src='/images/project1.png'>"
+=======
+excerpt: "Warning and Route Recommendation System for Roads with High Accident Rates<br/><img src='/images/icon-1024.png'>"
+>>>>>>> Stashed changes
 collection: Project
 ---
 
