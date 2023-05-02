@@ -15,16 +15,16 @@ redirect_from:
 <br>Education
 ======
 * <b>University of Wisconsin–Madison</b>
-<br><i>Visiting International Student Program</i>                  
+<i>Visiting International Student Program</i>                  
 
 * <b>Feng Chia University</b>                              
-<br><i>B.S. in Computer Science</i>                                 
+<i>B.S. in Computer Science</i>                                 
   * Majored in Information Engineering and Computer Science, GPA 3.6
   * Certificate - Collegiate Programming Examination Top 30% in Computer Science Group
   * Nondegree Program: Information and Communications Security Program/Internet of things Program
 
 * <b>Providence University</b>              
-<br><i>Enrolled in B.S. in Data Science</i>                      
+<i>Enrolled in B.S. in Data Science</i>                      
   * Majored in Data Science and Big Data Analytics (GPA: 3.9)
 
 Experience
