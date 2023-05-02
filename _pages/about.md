@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Yichen(Andy) YU
+title: "Yichen(Andy) Yu
 
 
 "
