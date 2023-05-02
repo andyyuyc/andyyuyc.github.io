@@ -54,7 +54,9 @@ Projects
   * Cued the team as to which specific plays the opponent will use at which points in time and try to identify the slogans or hand signals that the opponent will use to change plays with the help of assisted technology
 
 * <b>Survey of Automotive Chip Industry Trends</b>
-  * Analyzed opportunities for Taiwanese electronics manufacturers in the global wave of electric vehicle development based on supply and demand Software for transferring files between LANs
+  * Analyzed opportunities for Taiwanese electronics manufacturers in the global wave of electric vehicle development based on supply and demand
+
+* <b>Software for transferring files between LANs</b>
   * Written in Python based on the UDP network protocol and users could choose to register themselves as either a sender or a recipient to exchange files
 
 * <b>Mini Game Designing with Development Board</b>
