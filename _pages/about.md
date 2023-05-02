@@ -13,13 +13,13 @@ Education
 ======
 * University of Wisconsin–Madison Madison, USA
   * Visiting International Student Program 2023.1-2023.6
-*
+
 * Feng Chia University Taichung, Taiwan
 * Bachelor of Science 2020.9-2023.6
   * Majored in Information Engineering and Computer Science, GPA 3.6
   * Certificate - Collegiate Programming Examination Top 30% in Computer Science Group
   * Nondegree Program: Information and Communications Security Program/Internet of things Program
-*
+
 * Providence University Taichung ,Taiwan
   * Enrolled in Bachelor of Science 2019.9-2020.6
 
@@ -29,7 +29,7 @@ Experience
 * Internship 2022.7-2022.8
   * Provided technical support for the national sales department and conduct negotiations with clients
   * Customized special electric equipments and corresponding parameters to satisfy various clients needs
-  * 
+   
 * ABB Xiamen Low Voltage Equipment Co., Ltd. Xiamen, China
 * Internship 2022.6-2022.7
   * Designed digital solutions for energy systems based on industrial application scenarios
@@ -41,7 +41,7 @@ Projects
   * Based on Flutter, run on both Android and Apple platforms and is available on the App Store and Google Play
   * Utilized the data on traffic accidents in Taichung provided by the government's open data platform to classify the accidents that occurred at different periods by time and weather
   * Generated the most frequent characteristics of induced accidents from them
-  * 
+  
 * AFC Women's Asian Cup 2022 Chinese Taipei Team Match Statistics
   * Participated in the post-match statistical analysis of Thailand vs. Indonesia (January 24, 2022), Thailand vs. Australia (January 27, 2022) and Chinese Taipei vs. the Philippines (January 30, 2022)
   * Statistics in seconds for on-court events such as possession changes, play changes, etc. that occur during the game
