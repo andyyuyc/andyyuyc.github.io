@@ -53,6 +53,13 @@ Projects
   * Statistics in seconds for on-court events such as possession changes, play changes, etc. that occur during the game
   * Cued the team as to which specific plays the opponent will use at which points in time and try to identify the slogans or hand signals that the opponent will use to change plays with the help of assisted technology
 
+* <b>Survey of Automotive Chip Industry Trends</b>
+  * Analyzed opportunities for Taiwanese electronics manufacturers in the global wave of electric vehicle development based on supply and demand Software for transferring files between LANs
+  * Written in Python based on the UDP network protocol and users could choose to register themselves as either a sender or a recipient to exchange files
+
+* <b>Mini Game Designing with Development Board</b>
+  * Created a dinosaur jump game on the display of the Nuvoton NL-NUC140V learning board through objective programming
+
 Site-wide configuration
 ------
 The main configuration file for the site is in the base directory in [_config.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_config.yml), which defines the content in the sidebars and other site-wide features. You will need to replace the default variables with ones about yourself and your site's github repository. The configuration file for the top menu is in [_data/navigation.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_data/navigation.yml). For example, if you don't have a portfolio or blog posts, you can remove those items from that navigation.yml file to remove them from the header. 
