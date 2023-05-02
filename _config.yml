@@ -9,7 +9,7 @@
 locale                   : "en-US"
 title                    : "Yichen(Andy) Yu"
 title_separator          : "-"
-name                     : &name "Yichen(Andy) Yu"
+name                     : &name " "
 description              : &description "personal description"
 url                      : https://andyyuyc.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
