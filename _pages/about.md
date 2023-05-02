@@ -18,7 +18,7 @@ redirect_from:
 <br><i>Master of Science in Computer Science</i>   
 
 * <b>University of Wisconsin–Madison</b>
-<br><i>Visiting International Student Program</i>                  
+<br><i>VISP Student</i>                  
 
 * <b>Feng Chia University</b>                              
 <i>Bachelor of Science in Computer Science</i>                                 
