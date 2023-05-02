@@ -26,7 +26,7 @@ Education
 
 * <b>Providence University</b>  
 <i>2019-2020</i>              
-<i>Enrolled in B.S. in Data Science</i>                      
+<i>Enrolled in Bachelor of Science in Data Science</i>                      
   * Majored in Data Science and Big Data Analytics (GPA: 3.9)
 
 <br>Experience
