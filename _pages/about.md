@@ -1,18 +1,13 @@
 ---
 permalink: /
-title: "Yichen(Andy) Yu
-
-
-"
+title: ""
 excerpt: "About me"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
-
-
-<br>Education
+Education
 ======
 * <b>University of Rochester</b>
 <br><i>(2023~</i> 
