@@ -14,20 +14,20 @@ redirect_from:
 
 <br>Education
 ======
-* <b>University of Rochester  (2023~)</b>
+* <b>University of Rochester (2023~)</b>
 <br><i>Master of Science in Computer Science</i>   
 
-* <b>University of Wisconsin–Madison</b>
-<br><i>VISP Student(2023)</i>                  
+* <b>University of Wisconsin–Madison (2023)</b>
+<br><i>VISP Student</i>                  
 
-* <b>Feng Chia University</b>                              
-<i>Bachelor of Science in Computer Science(2020-2023)</i>                                 
+* <b>Feng Chia University (2020-2023)</b>                              
+<i>Bachelor of Science in Computer Science</i>                                 
   * Majored in Information Engineering and Computer Science, GPA 3.6
   * Certificate - Collegiate Programming Examination Top 30% in Computer Science Group
   * Nondegree Program: Information and Communications Security Program/Internet of things Program
 
-* <b>Providence University</b>              
-<i>Enrolled in B.S. in Data Science(2019-2020)</i>                      
+* <b>Providence University (2019-2020)</b>              
+<i>Enrolled in B.S. in Data Science</i>                      
   * Majored in Data Science and Big Data Analytics (GPA: 3.9)
 
 <br>Experience
