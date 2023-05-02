@@ -14,11 +14,14 @@ redirect_from:
 
 <br>Education
 ======
+* <b>University of Rochester</b>
+<br><i>Master of Science in Computer Science</i>   
+
 * <b>University of Wisconsin–Madison</b>
 <br><i>Visiting International Student Program</i>                  
 
 * <b>Feng Chia University</b>                              
-<i>B.S. in Computer Science</i>                                 
+<i>Bachelor of Science in Computer Science</i>                                 
   * Majored in Information Engineering and Computer Science, GPA 3.6
   * Certificate - Collegiate Programming Examination Top 30% in Computer Science Group
   * Nondegree Program: Information and Communications Security Program/Internet of things Program
