@@ -19,18 +19,18 @@ redirect_from:
 <br><i>Master of Science in Computer Science</i>   
 
 * <b>University of Wisconsin–Madison</b>
-<br><i>(2023)</i>       
-<br><i>VISP Student</i>                  
+<br><i>2023</i>       
+<i>VISP Student</i>                  
 
 * <b>Feng Chia University</b> 
-<br><i>(2020-2023)</i>                              
+<br><i>2020-2023</i>                              
 <i>Bachelor of Science in Computer Science</i>                                 
   * Majored in Information Engineering and Computer Science, GPA 3.6
   * Certificate - Collegiate Programming Examination Top 30% in Computer Science Group
   * Nondegree Program: Information and Communications Security Program/Internet of things Program
 
 * <b>Providence University</b>  
-<i>(2019-2020)</i>              
+<i>2019-2020</i>              
 <i>Enrolled in B.S. in Data Science</i>                      
   * Majored in Data Science and Big Data Analytics (GPA: 3.9)
 
