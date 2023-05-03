@@ -15,7 +15,7 @@ Education
 
 * <b>University of Wisconsin–Madison</b>
 <br><i>2023</i>       
-<i>VISP Student</i>                  
+<i>VISP Student in Computer Science</i>                  
 
 * <b>Feng Chia University</b> 
 <br><i>2020-2023</i>                              
@@ -26,7 +26,7 @@ Education
 
 * <b>Providence University</b>  
 <i>2019-2020</i>              
-<i>Enrolled in B.S. in Data Science</i>                      
+<i>Enrolled in Bachelor of Science in Data Science</i>                      
   * Majored in Data Science and Big Data Analytics (GPA: 3.9)
 
 <br>Experience
