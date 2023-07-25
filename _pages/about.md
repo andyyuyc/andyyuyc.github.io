@@ -10,7 +10,7 @@ redirect_from:
 Education
 ======
 * <b>University of Rochester</b>
-<br><i>(2023~</i> 
+<br><i>2023~</i> 
 <br><i>Master of Science in Computer Science</i>   
 
 * <b>University of Wisconsin–Madison</b>
