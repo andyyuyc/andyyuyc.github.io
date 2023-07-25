@@ -21,7 +21,6 @@ Education
 <br><i>2020-2023</i>                              
 <i>Bachelor of Science in Computer Science</i>                                 
   * Majored in Information Engineering and Computer Science
-  * Certificate - Collegiate Programming Examination Top 30% in Computer Science Group
   * Nondegree Program: Information and Communications Security Program/Internet of things Program
 
 * <b>Providence University</b>  
