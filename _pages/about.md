@@ -20,14 +20,14 @@ Education
 * <b>Feng Chia University</b> 
 <br><i>2020-2023</i>                              
 <i>Bachelor of Science in Computer Science</i>                                 
-  * Majored in Information Engineering and Computer Science, GPA 3.6
+  * Majored in Information Engineering and Computer Science
   * Certificate - Collegiate Programming Examination Top 30% in Computer Science Group
   * Nondegree Program: Information and Communications Security Program/Internet of things Program
 
 * <b>Providence University</b>  
 <i>2019-2020</i>              
 <i>Enrolled in Bachelor of Science in Data Science</i>                      
-  * Majored in Data Science and Big Data Analytics (GPA: 3.9)
+  * Majored in Data Science and Big Data Analytics
 
 <br>Experience
 ======
