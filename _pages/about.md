@@ -53,7 +53,7 @@ Education
 * <b>University of Rochester</b>                                                
 <i>Rochester, USA</i>
 <br><i>Research Assistant</i>                                               
-  * RA for the BeeTrap program at HCI Lab.
+  * RA for the BeeTrap project at HCI Lab.
 
 
 <br>Projects
