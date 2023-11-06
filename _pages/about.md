@@ -47,6 +47,15 @@ Education
   * Designed digital solutions for energy systems based on industrial application scenarios
   * Implemented analysis system with Python and R with machine learning for data processing
 
+ 
+<br>Researching Experience
+======
+* <b>University of Rochester</b>                                                
+<i>Rochester, USA</i>
+<br><i>Research Assistant</i>                                               
+  * RA for the BeeTrap program at HCI Lab.
+
+
 <br>Projects
 ======
 * <b>Warning and Route Recommendation System for Roads with High Accident Rates</b>
