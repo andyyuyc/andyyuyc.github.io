@@ -30,6 +30,11 @@ Education
 
 <br>Experience
 ======
+* <b>Milele Chikasa Anana Elementary School</b>                                                
+<i>Madison, USA</i>
+<br><i>Teacher</i>                                               
+  * Teaching K-12 elementary school students basic programming skills in the Scratch Club. 
+
 * <b>Schneider Electric</b>                                                
 <i>Shanghai, China</i>
 <br><i>Internship</i>                                               
