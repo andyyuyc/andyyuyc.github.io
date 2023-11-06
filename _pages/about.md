@@ -28,7 +28,7 @@ Education
 <i>Enrolled in Bachelor of Science in Data Science</i>                      
   * Majored in Data Science and Big Data Analytics
 
-<br>Working Experience
+<br>Work
 ======
 * <b>Milele Chikasa Anana Elementary School</b>                                                
 <i>Madison, USA</i>
@@ -48,7 +48,7 @@ Education
   * Implemented analysis system with Python and R with machine learning for data processing
 
  
-<br>Researching Experience
+<br>Research
 ======
 * <b>University of Rochester</b>                                                
 <i>Rochester, USA</i>
