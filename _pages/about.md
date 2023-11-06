@@ -28,7 +28,7 @@ Education
 <i>Enrolled in Bachelor of Science in Data Science</i>                      
   * Majored in Data Science and Big Data Analytics
 
-<br>Experience
+<br>Working Experience
 ======
 * <b>Milele Chikasa Anana Elementary School</b>                                                
 <i>Madison, USA</i>
@@ -62,8 +62,8 @@ Education
 
 <br>Scholastic Achievements
 ======
-* <b>2022 APP Mobile Application Innovation Competition 3rd Prize</b>: Sponsored by Apple,China ,Feng Chia University and Zhejiang University
 * <b>2023 APP Mobile Application Innovation Competition 1st Prize</b>: Sponsored by Apple,China ,Feng Chia University and Zhejiang University
+* <b>2022 APP Mobile Application Innovation Competition 3rd Prize</b>: Sponsored by Apple,China ,Feng Chia University and Zhejiang University
 * <b>Special Award of Digital Social Innovation Competition</b>: Awarded by MediaTek Inc. for development intelligent system for countryside services
 
 <br>Skills and Interests
