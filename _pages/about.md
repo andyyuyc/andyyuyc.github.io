@@ -49,10 +49,18 @@ Education
  
 <br>Research
 ======
-* <b>University of Rochester</b>                                                
+* <b>University of Rochester Medical Center - Dzikowicz Lab</b>                                                
 <i>Rochester, USA</i>
 <br><i>Research Assistant</i>                                               
-  * RA for the BeeTrap project at HCI Lab.
+  * Image recognition of electrocardiograms to digitize paper-based information.
+  * Cleaning, counting, and predicting healthcare data.
+
+* <b>ROC-HCI Lab</b>                                                
+<i>Rochester, USA</i>
+<br><i>Research Assistant</i>                                               
+  * Using Unity to create AR educational games for K-12 kids on Android and Meta Quest.(Advisor: Zhen Bai)
+  * Using Unity to develop an MR system to alleviate separation anxiety disorder in kids.
+  * Designing an AR-based system for parents of kids with ASL to learn sign language with their kids.
 
 
 <br>Projects
@@ -83,8 +91,6 @@ Education
 
 
 
-
-
-<div style="display: inline-block; transform: scale(0.5); transform-origin: top left;">
+<div style="width: 200px; height: 200px; overflow: hidden; transform: scale(0.5); transform-origin: top left;">
   <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=0pgG4d3yWRNxR_V-9xd1cZhbvjqU2WU8x07Df9FgUzc"></script>
 </div>
