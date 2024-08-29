@@ -81,3 +81,4 @@ Education
 <br><b>Interests</b>: Software Development, Technical Innovation, Data Processing, Github
 
 <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=0pgG4d3yWRNxR_V-9xd1cZhbvjqU2WU8x07Df9FgUzc"></script>
+<a href="https://clustrmaps.com/site/1c11c"  title="Visit tracker"><img src="//www.clustrmaps.com/map_v2.png?d=0pgG4d3yWRNxR_V-9xd1cZhbvjqU2WU8x07Df9FgUzc&cl=ffffff" /></a>
