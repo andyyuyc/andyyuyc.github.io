@@ -84,6 +84,7 @@ Education
 
 
 
-<div style="transform: scale(0.2); transform-origin: top left;">
+
+<div style="display: inline-block; transform: scale(0.5); transform-origin: top left;">
   <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=0pgG4d3yWRNxR_V-9xd1cZhbvjqU2WU8x07Df9FgUzc"></script>
 </div>
