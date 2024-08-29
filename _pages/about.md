@@ -79,3 +79,5 @@ Education
 <b>Programming</b>: R, Python, C, Dart, Swift, SQL, Java, C++, Stat, HTML
 <br><b>Language</b>: English, Mandarin, Shanghainese
 <br><b>Interests</b>: Software Development, Technical Innovation, Data Processing, Github
+
+<script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=0pgG4d3yWRNxR_V-9xd1cZhbvjqU2WU8x07Df9FgUzc"></script>
