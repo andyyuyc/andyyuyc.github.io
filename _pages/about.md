@@ -75,7 +75,7 @@ Education
 <br>Selected Projects
 ======
 * <b>Running Training Assistance App for the Blind - RunPacer</b>
-<br>This project has been acquired for 33,000 USD (1,000,000 TWD).</i>
+<br>This project has been acquired for 33,000 USD (1,000,000 TWD).
   * An app based on Swift that supports iOS and WatchOS
   * Helps blind people to find runners online and help them to do daily running training
   * Enables runners and blind people to run at the same speed by setting the pulse and feeding back the beat sound
