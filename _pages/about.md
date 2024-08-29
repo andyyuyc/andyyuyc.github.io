@@ -100,6 +100,7 @@ Education
 
 
 
-<div style="width: 200px; height: 200px; overflow: hidden; transform: scale(0.5); transform-origin: top left;">
+<div style="width: 200px; height: 200px; overflow: hidden; transform: scale(0.5); transform-origin: bottom left;">
   <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=0pgG4d3yWRNxR_V-9xd1cZhbvjqU2WU8x07Df9FgUzc"></script>
 </div>
+
