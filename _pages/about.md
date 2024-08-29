@@ -24,7 +24,23 @@ Education
 
 * <b>Providence University</b>  
 <i>2019-2020</i>              
-<i>Enrolled in Bachelor of Science in Data Science</i>                      
+<i>Enrolled in Bachelor of Science in Data Science</i>
+
+
+<br>Research Experience
+======
+* <b>University of Rochester Medical Center - Dzikowicz Lab</b>                                                
+<i>Rochester, USA</i>
+<br><i>Research Assistant</i>                                               
+  * Image recognition of electrocardiograms to digitize paper-based information.
+  * Cleaning, counting, and predicting healthcare data.
+
+* <b>ROC-HCI Lab</b>                                                
+<i>Rochester, USA</i>
+<br><i>Research Assistant</i>                                               
+  * Using Unity to create AR educational games for K-12 kids on Android and Meta Quest.(Advisor: Zhen Bai)
+  * Using Unity to develop an MR system to alleviate separation anxiety disorder in kids.
+  * Designing an AR-based system for parents of kids with ASL to learn sign language with their kids.
 
 
 <br>Work Experience
@@ -55,25 +71,17 @@ Education
   * Designed digital solutions for energy systems based on industrial application scenarios
   * Implemented analysis system with Python and R with machine learning for data processing
 
+
+<br>Selected Projects
+======
+* <b>Running Training Assistance App for the Blind - RunPacer</b>
+<i>This project has been acquired for about 33,000 USD (1,000,000 TWD).</i>
+  * An app based on Swift that supports iOS and WatchOS
+  * Helps blind people to find runners online and help them to do daily running training
+  * Enables runners and blind people to run at the same speed by setting the pulse and feeding back the beat sound
+  * Data collection on the Apple Watch to provide hydration and heat stroke prevention reminders
+  * Analysis of training data after each exercise and displaying the data in charts
  
-<br>Research
-======
-* <b>University of Rochester Medical Center - Dzikowicz Lab</b>                                                
-<i>Rochester, USA</i>
-<br><i>Research Assistant</i>                                               
-  * Image recognition of electrocardiograms to digitize paper-based information.
-  * Cleaning, counting, and predicting healthcare data.
-
-* <b>ROC-HCI Lab</b>                                                
-<i>Rochester, USA</i>
-<br><i>Research Assistant</i>                                               
-  * Using Unity to create AR educational games for K-12 kids on Android and Meta Quest.(Advisor: Zhen Bai)
-  * Using Unity to develop an MR system to alleviate separation anxiety disorder in kids.
-  * Designing an AR-based system for parents of kids with ASL to learn sign language with their kids.
-
-
-<br>Projects
-======
 * <b>Warning and Route Recommendation System for Roads with High Accident Rates</b>
   * Based on Flutter, run on both Android and Apple platforms and is available on the App Store and Google Play
   * Utilized the data on traffic accidents in Taichung provided by the government's open data platform to classify the accidents that occurred at different periods by time and weather
