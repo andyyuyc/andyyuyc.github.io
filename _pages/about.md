@@ -27,8 +27,17 @@ Education
 <i>Enrolled in Bachelor of Science in Data Science</i>                      
 
 
-<br>Work
+<br>Work Experience
 ======
+* <b>Porsche Engineering</b>                                                
+<i>Shanghai, China</i>
+<br><i>Internship</i>                                               
+  * Designed the system and implemented the design for the next generation Cayenne.
+  * Use Carla to create a virtual test road environment from which real-time vehicle information such as speed, gear, position, etc. can be obtained.
+  * Using Unity, we implemented the designed driving system interface and connected it to Carla via UDP and let the information in Carla can be displayed correctly in Unity.
+  * Write algorithms based on semantic segmentation camera and depth camera in Carla. Combine the features of the two cameras let them can scan and recognize vehicles and other objects around them, and display these recognized objects to Unity.
+ 
+
 * <b>Milele Chikasa Anana Elementary School</b>                                                
 <i>Madison, USA</i>
 <br><i>Teacher</i>                                               
