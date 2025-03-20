@@ -24,11 +24,36 @@ Education
 
 * <b>Providence University</b>  
 <i>2019-2020</i>              
-<i>Enrolled in Bachelor of Science in Data Science</i>                      
+<i>Enrolled in Bachelor of Science in Data Science</i>
 
 
-<br>Work
+<br>Research Experience
 ======
+* <b>University of Rochester Medical Center - Dzikowicz Lab</b>                                                
+<i>Rochester, USA</i>
+<br><i>Research Assistant</i>                                               
+  * Image recognition of electrocardiograms to digitize paper-based information.
+  * Cleaning, counting, and predicting healthcare data.
+
+* <b>ROC-HCI Lab</b>                                                
+<i>Rochester, USA</i>
+<br><i>Research Assistant</i>                                               
+  * Using Unity to create AR educational games for K-12 kids on Android and Meta Quest.(Advisor: Zhen Bai)
+  * Using Unity to develop an MR system to alleviate separation anxiety disorder in kids.
+  * Designing an AR-based system for parents of kids with ASL to learn sign language with their kids.
+
+
+<br>Work Experience
+======
+* <b>Porsche Engineering</b>                                                
+<i>Shanghai, China</i>
+<br><i>Internship</i>                                               
+  * Designed the system and implemented the design for the next generation Cayenne.
+  * Use Carla to create a virtual test road environment from which real-time vehicle information such as speed, gear, position, etc. can be obtained.
+  * Using Unity, we implemented the designed driving system interface and connected it to Carla via UDP and let the information in Carla can be displayed correctly in Unity.
+  * Write algorithms based on semantic segmentation camera and depth camera in Carla. Combine the features of the two cameras let them can scan and recognize vehicles and other objects around them, and display these recognized objects to Unity.
+ 
+
 * <b>Milele Chikasa Anana Elementary School</b>                                                
 <i>Madison, USA</i>
 <br><i>Teacher</i>                                               
@@ -46,17 +71,17 @@ Education
   * Designed digital solutions for energy systems based on industrial application scenarios
   * Implemented analysis system with Python and R with machine learning for data processing
 
+
+<br>Selected Projects
+======
+* <b>Running Training Assistance App for the Blind - RunPacer</b>
+<br>This project has been acquired for 33,000 USD (1,000,000 TWD).
+  * An app based on Swift that supports iOS and WatchOS
+  * Helps blind people to find runners online and help them to do daily running training
+  * Enables runners and blind people to run at the same speed by setting the pulse and feeding back the beat sound
+  * Data collection on the Apple Watch to provide hydration and heat stroke prevention reminders
+  * Analysis of training data after each exercise and displaying the data in charts
  
-<br>Research
-======
-* <b>University of Rochester</b>                                                
-<i>Rochester, USA</i>
-<br><i>Research Assistant</i>                                               
-  * RA for the BeeTrap project at HCI Lab.
-
-
-<br>Projects
-======
 * <b>Warning and Route Recommendation System for Roads with High Accident Rates</b>
   * Based on Flutter, run on both Android and Apple platforms and is available on the App Store and Google Play
   * Utilized the data on traffic accidents in Taichung provided by the government's open data platform to classify the accidents that occurred at different periods by time and weather
@@ -79,3 +104,11 @@ Education
 <b>Programming</b>: R, Python, C, Dart, Swift, SQL, Java, C++, Stat, HTML
 <br><b>Language</b>: English, Mandarin, Shanghainese
 <br><b>Interests</b>: Software Development, Technical Innovation, Data Processing, Github
+
+
+
+
+<div style="width: 200px; height: 200px; overflow: hidden; transform: scale(0.5); transform-origin: bottom left;">
+  <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=0pgG4d3yWRNxR_V-9xd1cZhbvjqU2WU8x07Df9FgUzc"></script>
+</div>
+
