@@ -1,0 +1,118 @@
+baseURL: "https://andyyuyc.github.io/"
+publishDir: "public"
+title: Yichen(Andy) Yu
+theme: PaperMod
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+pagination:
+  pagerSize: 20
+
+taxonomies:
+    tag: tags
+
+menu:
+    main:
+        # - name: Books
+          # url: books/
+          # weight: 5
+        - name: Papers
+          url: papers/
+          weight: 2
+        - name: Teaching
+          url: courses/
+          weight: 3
+        # - name: Data
+          # url: data/
+          # weight: 4
+        # - name: Blog
+          # url: https://en.wikipedia.org/wiki/Moritz-Maria_von_Igelfeld_(character)
+          # weight: 6
+
+params:
+    description: "This website hosts Andy's information."
+    author: Yichen(Andy) Yu
+    # googleAnalyticsID: "G-XXXXX"
+    DateFormat: "January 2006"
+    defaultTheme: light
+    hideFooter: false
+    disableThemeToggle: true
+    ShowShareButtons: false
+    ShowReadingTime: false
+    disableSpecial1stPost: true
+    disableAnchoredHeadings: true
+    ShowPostNavLinks: false
+    ShowBreadCrumbs: false
+    ShowCodeCopyButtons: true
+    ShowAllPagesInArchive: false
+    MainSections: ["books","courses","papers","data"]
+    ShowToc: false
+    disableScrollToTop: true
+    TocOpen: true
+    ShowWordCount: false
+    UseHugoToc: true
+    comments: false
+    math: true
+    profileMode:
+          enabled: true
+          title: Yichen(Andy) Yu
+          subtitle: "I am a Full-Time Research Assistant at <a href='https://www.ncsu.edu/' target='_blank'><b>North Carolina State University</b></a>, working with <a href='http://georgiejin.com/' target='_blank'><b>Prof. Qiao Jin</b></a>, Master Student at <a href='https://www.gatech.edu/' target='_blank'><b>Georgia Tech</b></a>, and Founder of <b>AYXR</b>. My research focuses on Human-Computer Interaction, particularly <b>AR/VR interactions</b>, <b>accessibility</b>, and <b>CS education</b>. Previously, I completed my Master degree at the <a href='https://www.rochester.edu/' target='_blank'><b>University of Rochester</b></a>, where I worked with <a href='https://zhenbai.io/' target='_blank'><b>Prof. Zhen Bai</b></a> and <a href='https://son.rochester.edu/directory/dillondzikowicz/' target='_blank'><b>Prof. Dillon Dzikowicz</b></a>, and have published research at CHI, UIST, Ubicomp, ISMAR and other venues."
+
+
+          imageUrl: "picture.JPG"
+          imageWidth: 160
+          imageHeight: 160
+          buttons:
+            - name: Papers
+              url: papers/
+            # - name: Data
+              # url: data/
+            # - name: Books
+              # url: books/
+            - name: Teaching
+              url: courses/
+            # - name: Tags
+              # url: tags/
+            # - name: Archive
+              # url: archive/
+            # - name: Blog
+              # url: blog/
+
+    socialIcons:
+        - name: CV
+          url: Andy_CV.pdf
+        - name: Email
+          url: mailto:lunarsboy@gmail.com
+        - name: Location
+          url: location/
+        - name: Google Scholar
+          url: https://scholar.google.com/citations?user=DyG_BjgAAAAJ&hl=zh-TW
+        - name: GitHub
+          url: https://github.com/andyyuyc
+        - name: Twitter
+          url: https://x.com/andyyuyc 
+
+    assets:
+        disableScrollBarStyle: true
+        css:
+            - "css/extended/venue.css"
+
+    cover:
+        hiddenInList: false
+        hiddenInSingle: true
+    label:
+      text: "Yichen(Andy) Yu"
+      icon: favicon.ico
+      iconHeight: 18
+
+markup:
+    goldmark:
+        renderer:
+            unsafe: true
+    highlight:
+        guessSyntax: true
+        style: autumn 
+    tableOfContents:
+        endLevel: 2
+        ordered: false
+        startLevel: 2
