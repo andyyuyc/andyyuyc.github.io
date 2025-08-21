@@ -1,0 +1,26 @@
+{{- $scratch := newScratch -}}
+
+{{- /* 1) Venue（会议/期刊） */ -}}
+{{- with .Params.venue -}}
+  {{- $scratch.Add "meta" (slice (printf "<span class='entry-venue'>%s</span>" .)) -}}
+{{- end -}}
+
+{{- /* 2) Authors（直接用 front matter 的 author 数组） */ -}}
+{{- $authors := .Params.author -}}
+{{- if and $authors (not (.Param "hideAuthor")) -}}
+  {{- /* 如果 author 里有 HTML（比如 <b>…</b>），需要标记 safeHTML */ -}}
+  {{- $authorsHTML := delimit $authors ", " -}}
+  {{- $scratch.Add "meta" (slice $authorsHTML) -}}
+{{- end -}}
+
+{{- /* 3) Date（最后显示） */ -}}
+{{- if not .Date.IsZero -}}
+  {{- $dateText  := (.Date | time.Format (default "January 2006" site.Params.DateFormat)) -}}
+  {{- $dateTitle := (.Date | time.Format "2006-01-02 15:04:05 -0700") -}}
+  {{- $scratch.Add "meta" (slice (printf "<span title='%s'>%s</span>" $dateTitle $dateText)) -}}
+{{- end -}}
+
+{{- /* 4) 输出（用普通空格分隔，避免 &nbsp; 阻止换行） */ -}}
+{{- with ($scratch.Get "meta") -}}
+  {{- delimit . " · " | safeHTML -}}
+{{- end -}}
