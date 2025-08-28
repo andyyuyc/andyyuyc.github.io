@@ -319,7 +319,7 @@
             .bumpImageUrl('https://cdn.jsdelivr.net/npm/three-globe/example/img/earth-topology.png')
             .backgroundColor('rgba(0,0,0,0)')
             .showAtmosphere(true).atmosphereColor('#80cfff').atmosphereAltitude(0.18)
-            .pointAltitude(d => (d.size ?? 0.10))
+            .pointAltitude(d => 0.05 + Math.log(1 + d.visit_count) * 0.1)
             .pointColor(d => (d.color || '#39c5ff'))
             .pointRadius(0.6);
 
@@ -356,10 +356,11 @@
             }
 
             const { data: rows, error } = await sb
-                .from('public_points')
+                .from('points_with_count')
                 .select('*')
                 .order('ts', { ascending: true })
                 .limit(1000);
+
 
             if (error) throw error;
 
