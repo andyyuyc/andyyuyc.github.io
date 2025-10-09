@@ -89,6 +89,202 @@
     <style>
         body {
             margin: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #4facfe 75%, #00f2fe 100%);
+            background-size: 400% 400%;
+            animation: gradientShift 15s ease infinite;
+            background-attachment: fixed;
+        }
+
+        @keyframes gradientShift {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        /* Liquid Glass effect for profile card */
+        .profile {
+            background: transparent !important;
+            backdrop-filter: none !important;
+            border: none !important;
+            box-shadow: none !important;
+        }
+
+        .profile_inner {
+            background: transparent !important;
+        }
+
+        /* Liquid Glass buttons */
+        .button {
+            background: rgba(255, 255, 255, 0.15) !important;
+            backdrop-filter: blur(10px) saturate(180%);
+            -webkit-backdrop-filter: blur(10px) saturate(180%);
+            border: 1px solid rgba(255, 255, 255, 0.3) !important;
+            box-shadow: 0 4px 16px 0 rgba(31, 38, 135, 0.3),
+                inset 0 1px 0 0 rgba(255, 255, 255, 0.4) !important;
+            transition: all 0.3s ease;
+        }
+
+        .button:hover {
+            background: rgba(255, 255, 255, 0.25) !important;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px 0 rgba(31, 38, 135, 0.4),
+                inset 0 1px 0 0 rgba(255, 255, 255, 0.5) !important;
+        }
+
+        /* Liquid Glass social icons */
+        .social-icons a {
+            background: rgba(255, 255, 255, 0.15) !important;
+            backdrop-filter: blur(10px) saturate(180%);
+            -webkit-backdrop-filter: blur(10px) saturate(180%);
+            border: 1px solid rgba(255, 255, 255, 0.3) !important;
+            box-shadow: 0 4px 16px 0 rgba(31, 38, 135, 0.3),
+                inset 0 1px 0 0 rgba(255, 255, 255, 0.4);
+            transition: all 0.3s ease;
+            border-radius: 50% !important;
+            width: 40px !important;
+            height: 40px !important;
+            display: inline-flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            padding: 0 !important;
+        }
+
+        .social-icons a svg {
+            width: 20px !important;
+            height: 20px !important;
+        }
+
+        .social-icons a:hover {
+            background: rgba(255, 255, 255, 0.25) !important;
+            transform: translateY(-2px) scale(1.05);
+            box-shadow: 0 6px 20px 0 rgba(31, 38, 135, 0.4),
+                inset 0 1px 0 0 rgba(255, 255, 255, 0.5);
+        }
+
+        /* Text color adjustments - keep original dark colors */
+        .profile h1,
+        .profile span {
+            color: var(--primary) !important;
+        }
+
+        .news-title {
+            color: var(--primary) !important;
+        }
+
+        .news-content,
+        .news-date {
+            color: var(--content) !important;
+        }
+
+        .news-date {
+            color: var(--secondary) !important;
+        }
+
+        .button-inner {
+            color: var(--primary) !important;
+        }
+
+        /* Theme Toggle Button */
+        .theme-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px) saturate(180%);
+            -webkit-backdrop-filter: blur(10px) saturate(180%);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 4px 16px 0 rgba(31, 38, 135, 0.3),
+                inset 0 1px 0 0 rgba(255, 255, 255, 0.4);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+
+        .theme-toggle:hover {
+            background: rgba(255, 255, 255, 0.25);
+            transform: scale(1.1);
+            box-shadow: 0 6px 20px 0 rgba(31, 38, 135, 0.4),
+                inset 0 1px 0 0 rgba(255, 255, 255, 0.5);
+        }
+
+        .theme-toggle svg {
+            width: 24px;
+            height: 24px;
+            stroke: var(--primary);
+            transition: all 0.3s ease;
+        }
+
+        .sun-icon {
+            display: block;
+        }
+
+        .moon-icon {
+            display: none;
+        }
+
+        /* Dark Mode Styles */
+        body.dark-mode {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 25%, #0f3460 50%, #533483 75%, #1a1a2e 100%);
+        }
+
+        body.dark-mode .sun-icon {
+            display: none;
+        }
+
+        body.dark-mode .moon-icon {
+            display: block;
+        }
+
+        body.dark-mode .profile h1,
+        body.dark-mode .profile span,
+        body.dark-mode .news-title,
+        body.dark-mode .news-content,
+        body.dark-mode .news-date,
+        body.dark-mode .button-inner {
+            color: rgba(255, 255, 255, 0.95) !important;
+        }
+
+        body.dark-mode .news-date {
+            color: rgba(255, 255, 255, 0.7) !important;
+        }
+
+        body.dark-mode .profile a,
+        body.dark-mode .news-content a {
+            color: rgba(255, 255, 255, 1) !important;
+        }
+
+        body.dark-mode .theme-toggle svg {
+            stroke: rgba(255, 255, 255, 0.95);
+        }
+
+        /* Dark mode - Liquid Glass background for logo area */
+        body.dark-mode .below-photo {
+            background: rgba(255, 255, 255, 0.18);
+            backdrop-filter: blur(20px) saturate(180%);
+            -webkit-backdrop-filter: blur(20px) saturate(180%);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37),
+                inset 0 1px 0 0 rgba(255, 255, 255, 0.35);
+            border-radius: 16px;
+            padding: 20px !important;
+        }
+
+        body.dark-mode .below-photo img {
+            filter: brightness(1.1);
         }
     </style>
 
@@ -96,9 +292,30 @@
 
 
 
+    <link rel="stylesheet" href="/assets/liquid-glass.css">
 </head>
 
 <body class="list" id="top">
+    <!-- Dark Mode Toggle -->
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+        <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+    </button>
+
     <main class="main">
         <div class="profile">
             <div class="profile_inner">
@@ -218,12 +435,132 @@
 
                 </div>
 
+                <!-- Latest News Section -->
+                <div class="news-section">
+                    <h2 class="news-title">Latest News</h2>
+                    <div class="news-list">
+
+                        <div class="news-item">
+                            <span class="news-date">[Sep 2025]</span>
+                            <span class="news-content">My Student Challenge Paper <b>NieNie</b> was accepted to
+                                <b>UbiComp/ISWC 2025</b>!</span>
+                        </div>
+                        <div class="news-item">
+                            <span class="news-date">[Sep 2025]</span>
+                            <span class="news-content">My Poster Paper <b>GenLARP</b> was accepted to <b>ISMAR
+                                    2025</b>!</span>
+                        </div>
+                        <div class="news-item">
+                            <span class="news-date">[Sep 2025]</span>
+                            <span class="news-content">Our Paper on <b>Embodied AI Literacy</b> was accepted to <b>ACM
+                                    TOCE</b>!</span>
+                        </div>
+                        <div class="news-item">
+                            <span class="news-date">[Aug 2025]</span>
+                            <span class="news-content">My Poster Paper <b>Noetic Dream</b> was accepted to <b>UIST
+                                    2025</b>!</span>
+                        </div>
+                        <div class="news-item">
+                            <span class="news-date">[Aug 2025]</span>
+                            <span class="news-content">My Poster Paper <b>RunPacer</b> was accepted to <b>ASSETS
+                                    2025</b>!</span>
+                        </div>
+                        <div class="news-item">
+                            <span class="news-date">[Aug 2025]</span>
+                            <span class="news-content">Started as Research Staff at <b>NC State University</b>.</span>
+                        </div>
+                        <div class="news-item">
+                            <span class="news-date">[Jun 2025]</span>
+                            <span class="news-content">Our Paper <b>Design AI for My Community</b> was accepted to
+                                <b>ICLS
+                                    2025</b>!</span>
+                        </div>
+                        <div class="news-item">
+                            <span class="news-date">[May 2025]</span>
+                            <span class="news-content">Graduated from <b>University of Rochester</b>.</span>
+                        </div>
+                        <div class="news-item">
+                            <span class="news-date">[Apr 2025]</span>
+                            <span class="news-content">My Late-Breaking Work <b>Chameleon</b> was accepted to <b>CHI
+                                    2025</b>!</span>
+                        </div>
+
+                    </div>
+                </div>
+
                 <!-- 外层容器（可保留，保证100%宽度即可） -->
                 <div class="globe-wrap">
                     <div id="globeViz"></div>
                 </div>
 
                 <style>
+                    /* Latest News Section */
+                    .news-section {
+                        width: 100%;
+                        max-width: 700px;
+                        margin: 30px auto 20px;
+                        padding: 20px;
+                        background: rgba(255, 255, 255, 0.1);
+                        backdrop-filter: blur(20px) saturate(180%);
+                        -webkit-backdrop-filter: blur(20px) saturate(180%);
+                        border-radius: 16px;
+                        border: 1px solid rgba(255, 255, 255, 0.2);
+                        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37),
+                            inset 0 1px 0 0 rgba(255, 255, 255, 0.3);
+                    }
+
+                    .news-title {
+                        font-size: 1.3em;
+                        font-weight: 600;
+                        margin: 0 0 15px 0;
+                        color: var(--primary);
+                    }
+
+                    .news-list {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 12px;
+                        max-height: 200px;
+                        overflow-y: scroll;
+                        padding-right: 5px;
+                    }
+
+                    .news-list::-webkit-scrollbar {
+                        width: 6px;
+                    }
+
+                    .news-list::-webkit-scrollbar-track {
+                        background: var(--code-bg);
+                        border-radius: 3px;
+                    }
+
+                    .news-list::-webkit-scrollbar-thumb {
+                        background: var(--border);
+                        border-radius: 3px;
+                    }
+
+                    .news-list::-webkit-scrollbar-thumb:hover {
+                        background: var(--secondary);
+                    }
+
+                    .news-item {
+                        display: flex;
+                        gap: 10px;
+                        line-height: 1.6;
+                        font-size: 0.95em;
+                    }
+
+                    .news-date {
+                        color: var(--secondary);
+                        font-weight: 600;
+                        flex-shrink: 0;
+                        min-width: 80px;
+                    }
+
+                    .news-content {
+                        color: var(--content);
+                    }
+
                     .globe-wrap {
                         width: 100%;
                         /* 新增：控制地球与 footer 的距离 */
@@ -265,7 +602,24 @@
 
     </main>
 
+    <!-- Dark Mode Toggle Script -->
+    <script>
+        // Check for saved theme preference or default to light mode
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        if (currentTheme === 'dark') {
+            document.body.classList.add('dark-mode');
+        }
 
+        // Toggle theme
+        const themeToggle = document.getElementById('theme-toggle');
+        themeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+
+            // Save preference
+            const theme = document.body.classList.contains('dark-mode') ? 'dark' : 'light';
+            localStorage.setItem('theme', theme);
+        });
+    </script>
 
     <script>
         let menu = document.getElementById('menu')
@@ -444,6 +798,7 @@
 
 
 
+    <script src="/assets/dark-mode.js"></script>
 </body>
 
 </html>
