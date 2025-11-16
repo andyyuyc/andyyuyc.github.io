@@ -363,6 +363,23 @@ body.dark-mode .page-header h1,
 body.dark-mode .post-description {
     color: rgba(255, 255, 255, 0.95) !important;
 }
+
+/* Mobile responsive - center single column */
+@media (max-width: 500px) {
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .gallery-item {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .gallery-image {
+        height: 300px;
+    }
+}
 </style>
 
 <script>
