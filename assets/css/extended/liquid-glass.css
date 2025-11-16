@@ -1,0 +1,316 @@
+/* Liquid Glass Design Styles */
+
+/* Animated Gradient Background */
+body {
+    margin: 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #4facfe 75%, #00f2fe 100%);
+    background-size: 400% 400%;
+    animation: gradientShift 15s ease infinite;
+    background-attachment: fixed;
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Liquid Glass effect for profile card */
+.profile {
+    background: transparent !important;
+    backdrop-filter: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.profile_inner {
+    background: transparent !important;
+}
+
+/* Liquid Glass buttons */
+.button {
+    background: rgba(255, 255, 255, 0.15) !important;
+    backdrop-filter: blur(10px) saturate(180%);
+    -webkit-backdrop-filter: blur(10px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+    box-shadow: 0 4px 16px 0 rgba(31, 38, 135, 0.3),
+        inset 0 1px 0 0 rgba(255, 255, 255, 0.4) !important;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background: rgba(255, 255, 255, 0.25) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px 0 rgba(31, 38, 135, 0.4),
+        inset 0 1px 0 0 rgba(255, 255, 255, 0.5) !important;
+}
+
+/* Liquid Glass social icons */
+.social-icons a {
+    background: rgba(255, 255, 255, 0.15) !important;
+    backdrop-filter: blur(10px) saturate(180%);
+    -webkit-backdrop-filter: blur(10px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+    box-shadow: 0 4px 16px 0 rgba(31, 38, 135, 0.3),
+        inset 0 1px 0 0 rgba(255, 255, 255, 0.4);
+    transition: all 0.3s ease;
+    border-radius: 50% !important;
+    width: 40px !important;
+    height: 40px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0 !important;
+}
+
+.social-icons a svg {
+    width: 20px !important;
+    height: 20px !important;
+}
+
+.social-icons a:hover {
+    background: rgba(255, 255, 255, 0.25) !important;
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 6px 20px 0 rgba(31, 38, 135, 0.4),
+        inset 0 1px 0 0 rgba(255, 255, 255, 0.5);
+}
+
+/* Text color adjustments - keep original dark colors */
+.profile h1,
+.profile span {
+    color: var(--primary) !important;
+}
+
+.news-title {
+    color: var(--primary) !important;
+}
+
+.news-content,
+.news-date {
+    color: var(--content) !important;
+}
+
+.news-date {
+    color: var(--secondary) !important;
+}
+
+.button-inner {
+    color: var(--primary) !important;
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px) saturate(180%);
+    -webkit-backdrop-filter: blur(10px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 16px 0 rgba(31, 38, 135, 0.3),
+        inset 0 1px 0 0 rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.theme-toggle:hover {
+    background: rgba(255, 255, 255, 0.25);
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px 0 rgba(31, 38, 135, 0.4),
+        inset 0 1px 0 0 rgba(255, 255, 255, 0.5);
+}
+
+.theme-toggle svg {
+    width: 24px;
+    height: 24px;
+    stroke: var(--primary);
+    transition: all 0.3s ease;
+}
+
+.sun-icon {
+    display: block;
+}
+
+.moon-icon {
+    display: none;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 25%, #0f3460 50%, #533483 75%, #1a1a2e 100%);
+}
+
+body.dark-mode .sun-icon {
+    display: none;
+}
+
+body.dark-mode .moon-icon {
+    display: block;
+}
+
+body.dark-mode .profile h1,
+body.dark-mode .profile span,
+body.dark-mode .news-title,
+body.dark-mode .news-content,
+body.dark-mode .news-date,
+body.dark-mode .button-inner {
+    color: rgba(255, 255, 255, 0.95) !important;
+}
+
+body.dark-mode .news-date {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+body.dark-mode .profile a,
+body.dark-mode .news-content a {
+    color: rgba(255, 255, 255, 1) !important;
+}
+
+body.dark-mode .theme-toggle svg {
+    stroke: rgba(255, 255, 255, 0.95);
+}
+
+/* Dark mode - Liquid Glass background for logo area */
+body.dark-mode .below-photo {
+    background: rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37),
+        inset 0 1px 0 0 rgba(255, 255, 255, 0.35);
+    border-radius: 16px;
+    padding: 20px !important;
+}
+
+body.dark-mode .below-photo img {
+    filter: brightness(1.1);
+}
+
+/* Latest News Section */
+.news-section {
+    width: 100%;
+    max-width: 700px;
+    margin: 30px auto 20px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37),
+        inset 0 1px 0 0 rgba(255, 255, 255, 0.3);
+}
+
+.news-title {
+    font-size: 1.3em;
+    font-weight: 600;
+    margin: 0 0 15px 0;
+    color: var(--primary);
+}
+
+.news-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-height: 200px;
+    overflow-y: scroll;
+    padding-right: 5px;
+}
+
+.news-list::-webkit-scrollbar {
+    width: 6px;
+}
+
+.news-list::-webkit-scrollbar-track {
+    background: var(--code-bg);
+    border-radius: 3px;
+}
+
+.news-list::-webkit-scrollbar-thumb {
+    background: var(--border);
+    border-radius: 3px;
+}
+
+.news-list::-webkit-scrollbar-thumb:hover {
+    background: var(--secondary);
+}
+
+.news-item {
+    display: flex;
+    gap: 10px;
+    line-height: 1.6;
+    font-size: 0.95em;
+}
+
+.news-date {
+    color: var(--secondary);
+    font-weight: 600;
+    flex-shrink: 0;
+    min-width: 80px;
+}
+
+.news-content {
+    color: var(--content);
+}
+
+/* Globe wrapper */
+.globe-wrap {
+    width: 100%;
+    margin-bottom: 4px;
+}
+
+#globeViz {
+    width: 280px;
+    height: 280px;
+    display: block;
+    margin: 0 auto 8px;
+}
+
+/* Footer spacing */
+.footer {
+    margin-top: 8px !important;
+}
+
+/* Remove extra padding from profile */
+.profile,
+.profile .profile_inner {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+main.main {
+    padding-bottom: 0 !important;
+}
+
+/* Below photo styling */
+.below-photo {
+    margin-top: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    row-gap: 8px;
+}
+
+.below-photo img {
+    height: 35px;
+    width: auto;
+    border-radius: 0;
+    box-shadow: none;
+}

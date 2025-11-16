@@ -34,10 +34,3 @@ To run the website locally:
 
 ```bash
 hugo server
-
-
-rm -rf public
-hugo -D --ignoreCache
-git add public
-git commit -m "fix: correct baseURL and rebuild"
-git push
