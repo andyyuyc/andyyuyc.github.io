@@ -7,5 +7,5 @@ My first camera was the **[Leica X Vario](https://en.wikipedia.org/wiki/Leica_X_
 
 As for the **[Nikon FM3A](https://en.wikipedia.org/wiki/Nikon_FM3A)**—that's a piece passed down from my grandfather.
 
-(Fun fact: It once cost about a Shanghai apartment, which proof that my grandfather's love for photography was no joke.)
+(Fun fact: It once cost about an apartment in Shanghai, which proves that my grandfather's love for photography was no joke.)
 
