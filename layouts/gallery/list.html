@@ -1,0 +1,523 @@
+{{- define "main" }}
+
+<header class="page-header">
+    <h1>{{ .Title }}</h1>
+    {{- if .Description }}
+    <div class="post-description">
+        {{ .Description }}
+    </div>
+    {{- end }}
+    {{- if .Content }}
+    <div class="gallery-intro">
+        {{ .Content }}
+    </div>
+    {{- end }}
+</header>
+
+<!-- Category Filter Buttons -->
+<div class="gallery-filter">
+    <button class="filter-btn active" onclick="filterGallery('all')">All</button>
+    <button class="filter-btn" onclick="filterGallery('Leica X Vario')">Leica X Vario</button>
+    <button class="filter-btn" onclick="filterGallery('Nikon FM3A')">Nikon FM3A</button>
+    <button class="filter-btn" onclick="filterGallery('Minolta Weathermatic Dual 35')">Minolta Weathermatic Dual 35</button>
+    <button class="filter-btn" onclick="filterGallery('iPhone')">iPhone</button>
+</div>
+
+<div class="gallery-grid">
+    {{- range .Pages }}
+    <article class="gallery-item" data-tags="{{ range .Params.tags }}{{ . }} {{ end }}">
+        {{- $image := .Resources.GetMatch "*.{jpg,jpeg,png,gif,webp}" }}
+        {{- if $image }}
+        <div class="gallery-image" onclick="openLightbox('{{ $image.RelPermalink }}', '{{ .Title }}')">
+            <img src="{{ $image.RelPermalink }}" alt="{{ .Title }}" loading="lazy" />
+        </div>
+        {{- else if .Params.cover.image }}
+        <div class="gallery-image" onclick="openLightbox('{{ .Params.cover.image | absURL }}', '{{ .Title }}')">
+            <img src="{{ .Params.cover.image | absURL }}" alt="{{ .Title }}" loading="lazy" />
+        </div>
+        {{- end }}
+        <div class="gallery-info">
+            <h3>{{ .Title }}</h3>
+            {{- if .Params.tags }}
+            <span class="gallery-camera">{{ index .Params.tags 0 }}</span>
+            {{- end }}
+            {{- if .Params.location }}
+            <a href="https://www.google.com/maps/search/{{ .Params.location | urlquery }}" target="_blank" class="gallery-location-link">
+                <span class="gallery-location">{{ .Params.location }}</span>
+            </a>
+            {{- end }}
+            {{- if .Date }}
+            <span class="gallery-date">{{ .Date.Format "Jan 2006" }}</span>
+            {{- end }}
+        </div>
+    </article>
+    {{- end }}
+</div>
+
+<!-- Lightbox Modal -->
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <span class="lightbox-close">&times;</span>
+    <span class="lightbox-prev" onclick="event.stopPropagation(); navigateLightbox(-1)">&#10094;</span>
+    <span class="lightbox-next" onclick="event.stopPropagation(); navigateLightbox(1)">&#10095;</span>
+    <img id="lightbox-img" class="lightbox-content" alt="">
+    <div id="lightbox-caption" class="lightbox-caption"></div>
+    <div id="lightbox-counter" class="lightbox-counter"></div>
+</div>
+
+<style>
+/* Override main container width for gallery */
+.main {
+    max-width: 1400px !important;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.gallery-item {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px) saturate(180%);
+    -webkit-backdrop-filter: blur(10px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px 0 rgba(31, 38, 135, 0.3),
+        inset 0 1px 0 0 rgba(255, 255, 255, 0.4);
+    transition: all 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px 0 rgba(31, 38, 135, 0.4),
+        inset 0 1px 0 0 rgba(255, 255, 255, 0.5);
+}
+
+.gallery-item a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.gallery-image {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.gallery-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover .gallery-image img {
+    transform: scale(1.05);
+}
+
+/* Lightbox Styles */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.lightbox-content {
+    display: block;
+    max-width: 90%;
+    max-height: 85%;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 8px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    animation: zoomIn 0.3s ease;
+    transition: opacity 0.15s ease;
+}
+
+@keyframes zoomIn {
+    from {
+        transform: translate(-50%, -50%) scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+    }
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 10000;
+    transition: all 0.3s ease;
+}
+
+.lightbox-close:hover {
+    color: #ff6666;
+    transform: scale(1.2);
+}
+
+.lightbox-caption {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+}
+
+.lightbox-prev,
+.lightbox-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 20px;
+    user-select: none;
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+}
+
+.lightbox-prev {
+    left: 20px;
+}
+
+.lightbox-next {
+    right: 20px;
+}
+
+.lightbox-prev:hover,
+.lightbox-next:hover {
+    background: rgba(255, 255, 255, 0.25);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.lightbox-counter {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    font-size: 1em;
+    padding: 8px 16px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+}
+
+.gallery-info {
+    padding: 15px;
+}
+
+.gallery-info h3 {
+    margin: 0 0 8px 0;
+    font-size: 1.1em;
+    color: var(--primary);
+}
+
+.gallery-location-link {
+    text-decoration: none;
+    display: block;
+}
+
+.gallery-location {
+    display: block;
+    font-size: 0.9em;
+    color: var(--secondary);
+    margin-bottom: 4px;
+    transition: all 0.3s ease;
+}
+
+.gallery-location-link:hover .gallery-location {
+    color: #667eea;
+    transform: translateX(3px);
+}
+
+.gallery-date {
+    display: block;
+    font-size: 0.85em;
+    color: var(--secondary);
+    opacity: 0.8;
+}
+
+body.dark-mode .gallery-info h3,
+body.dark-mode .gallery-location,
+body.dark-mode .gallery-date {
+    color: rgba(255, 255, 255, 0.95) !important;
+}
+
+body.dark-mode .gallery-date {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.page-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.page-header h1 {
+    color: var(--primary);
+    font-size: 2.5em;
+}
+
+.post-description {
+    color: var(--secondary);
+    font-size: 1.1em;
+}
+
+.gallery-intro {
+    margin-top: 15px;
+    color: var(--secondary);
+    font-size: 0.9em;
+    line-height: 1.5;
+    max-width: 100%;
+}
+
+body.dark-mode .gallery-intro {
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+/* Filter Buttons */
+.gallery-filter {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.filter-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px) saturate(180%);
+    -webkit-backdrop-filter: blur(10px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: var(--primary);
+    font-size: 0.95em;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 16px 0 rgba(31, 38, 135, 0.3),
+        inset 0 1px 0 0 rgba(255, 255, 255, 0.4);
+}
+
+.filter-btn:hover {
+    background: rgba(255, 255, 255, 0.25);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px 0 rgba(31, 38, 135, 0.4),
+        inset 0 1px 0 0 rgba(255, 255, 255, 0.5);
+}
+
+.filter-btn.active {
+    background: rgba(255, 255, 255, 0.35);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 6px 20px 0 rgba(31, 38, 135, 0.5),
+        inset 0 1px 0 0 rgba(255, 255, 255, 0.6);
+}
+
+body.dark-mode .filter-btn {
+    color: rgba(255, 255, 255, 0.95) !important;
+}
+
+/* Camera tag display */
+.gallery-camera {
+    display: inline-block;
+    font-size: 0.8em;
+    color: #fff;
+    background: rgba(102, 126, 234, 0.7);
+    padding: 2px 8px;
+    border-radius: 10px;
+    margin-bottom: 6px;
+}
+
+body.dark-mode .page-header h1,
+body.dark-mode .post-description {
+    color: rgba(255, 255, 255, 0.95) !important;
+}
+</style>
+
+<script>
+// Store all images for navigation
+let galleryImages = [];
+let currentImageIndex = 0;
+
+// Initialize gallery images on page load
+document.addEventListener('DOMContentLoaded', function() {
+    const items = document.querySelectorAll('.gallery-item');
+    items.forEach((item, index) => {
+        const img = item.querySelector('.gallery-image img');
+        const title = item.querySelector('.gallery-info h3').textContent;
+        if (img) {
+            galleryImages.push({
+                src: img.src,
+                title: title,
+                element: item
+            });
+        }
+    });
+});
+
+function openLightbox(src, title) {
+    const lightbox = document.getElementById('lightbox');
+    const img = document.getElementById('lightbox-img');
+    const caption = document.getElementById('lightbox-caption');
+    const counter = document.getElementById('lightbox-counter');
+
+    // Find current image index - compare by ending path since src may be relative or absolute
+    currentImageIndex = galleryImages.findIndex(imgData => {
+        // Check if either contains the other (handles relative vs absolute paths)
+        return imgData.src.includes(src) || src.includes(imgData.src) ||
+               imgData.src.endsWith(src.split('/').pop()) && src.endsWith(imgData.src.split('/').pop());
+    });
+    if (currentImageIndex === -1) currentImageIndex = 0;
+
+    lightbox.style.display = 'block';
+    img.src = src;
+    img.alt = title;
+    caption.textContent = title;
+
+    // Update counter
+    updateCounter();
+
+    // Prevent body scroll when lightbox is open
+    document.body.style.overflow = 'hidden';
+}
+
+function updateCounter() {
+    const counter = document.getElementById('lightbox-counter');
+    const visibleImages = galleryImages.filter(img =>
+        img.element.style.display !== 'none'
+    );
+    const visibleIndex = visibleImages.findIndex(img =>
+        img.src === galleryImages[currentImageIndex].src
+    );
+    counter.textContent = `${visibleIndex + 1} / ${visibleImages.length}`;
+}
+
+function navigateLightbox(direction) {
+    // Get only visible images (respecting filter)
+    const visibleImages = galleryImages.filter(img =>
+        img.element.style.display !== 'none'
+    );
+
+    if (visibleImages.length === 0) return;
+
+    // Find current position in visible images
+    let visibleIndex = visibleImages.findIndex(img =>
+        img.src === galleryImages[currentImageIndex].src
+    );
+
+    // Calculate new index
+    visibleIndex += direction;
+    if (visibleIndex < 0) visibleIndex = visibleImages.length - 1;
+    if (visibleIndex >= visibleImages.length) visibleIndex = 0;
+
+    // Update to new image
+    const newImage = visibleImages[visibleIndex];
+    currentImageIndex = galleryImages.indexOf(newImage);
+
+    const img = document.getElementById('lightbox-img');
+    const caption = document.getElementById('lightbox-caption');
+
+    // Add transition effect
+    img.style.opacity = '0';
+    setTimeout(() => {
+        img.src = newImage.src;
+        img.alt = newImage.title;
+        caption.textContent = newImage.title;
+        img.style.opacity = '1';
+        updateCounter();
+    }, 150);
+}
+
+function closeLightbox() {
+    const lightbox = document.getElementById('lightbox');
+    lightbox.style.display = 'none';
+    document.body.style.overflow = 'auto';
+}
+
+// Keyboard navigation
+document.addEventListener('keydown', function(e) {
+    const lightbox = document.getElementById('lightbox');
+    if (lightbox.style.display === 'block') {
+        if (e.key === 'Escape') {
+            closeLightbox();
+        } else if (e.key === 'ArrowLeft') {
+            navigateLightbox(-1);
+        } else if (e.key === 'ArrowRight') {
+            navigateLightbox(1);
+        }
+    }
+});
+
+// Prevent closing when clicking on the image itself
+document.getElementById('lightbox-img').addEventListener('click', function(e) {
+    e.stopPropagation();
+});
+
+// Gallery filter function
+function filterGallery(category) {
+    const items = document.querySelectorAll('.gallery-item');
+    const buttons = document.querySelectorAll('.filter-btn');
+
+    // Update active button
+    buttons.forEach(btn => {
+        btn.classList.remove('active');
+        if (btn.textContent === category || (category === 'all' && btn.textContent === 'All')) {
+            btn.classList.add('active');
+        }
+    });
+
+    // Filter items
+    items.forEach(item => {
+        const tags = item.getAttribute('data-tags');
+        if (category === 'all' || tags.includes(category)) {
+            item.style.display = 'block';
+            item.style.animation = 'fadeIn 0.5s ease';
+        } else {
+            item.style.display = 'none';
+        }
+    });
+}
+
+// Add fade in animation
+const style = document.createElement('style');
+style.textContent = `
+    @keyframes fadeIn {
+        from { opacity: 0; transform: scale(0.95); }
+        to { opacity: 1; transform: scale(1); }
+    }
+`;
+document.head.appendChild(style);
+</script>
+
+{{- end }}

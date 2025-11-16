@@ -1,0 +1,288 @@
+{{- define "main" }}
+
+<!-- Dark Mode Toggle -->
+<button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="5"></circle>
+        <line x1="12" y1="1" x2="12" y2="3"></line>
+        <line x1="12" y1="21" x2="12" y2="23"></line>
+        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+        <line x1="1" y1="12" x2="3" y2="12"></line>
+        <line x1="21" y1="12" x2="23" y2="12"></line>
+        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+    </svg>
+</button>
+
+{{- with site.Params.profileMode }}
+<div class="profile">
+    <div class="profile_inner">
+        {{- if .imageUrl }}
+        <img draggable="false" src="{{ .imageUrl | absURL }}" alt="{{ .imageTitle | default "profile image" }}" title="{{ .imageTitle }}"
+            height="{{ .imageHeight | default 150 }}" width="{{ .imageWidth | default 150 }}" />
+        {{- end }}
+        <h1>{{ .title | default site.Title | markdownify }}</h1>
+        <span>{{- .subtitle | markdownify }}</span>
+        {{- partial "social_icons.html" (dict "align" "") -}}
+
+        {{- with .buttons }}
+        <div class="buttons">
+            {{- range . }}
+            <a class="button" href="{{ .url | absURL }}" rel="noopener" title="{{ .name }}">
+                <span class="button-inner">
+                    {{ .name }}
+                </span>
+            </a>
+            {{- end }}
+        </div>
+        {{- end }}
+
+        <!-- University Logos Section -->
+        <div class="below-photo">
+            <a href="https://www.ncsu.edu" target="_blank" rel="noopener">
+                <img src="{{ "images/NCSU.svg" | absURL }}" alt="NCSU" loading="lazy" />
+            </a>
+            <a href="https://www.gatech.edu" target="_blank" rel="noopener">
+                <img src="{{ "images/GT.svg" | absURL }}" alt="GT" style="height:55px;" loading="lazy" />
+            </a>
+            <a href="https://www.rochester.edu" target="_blank" rel="noopener">
+                <img src="{{ "images/UR.svg" | absURL }}" alt="UR" loading="lazy" />
+            </a>
+            <a href="https://www.wisc.edu" target="_blank" rel="noopener">
+                <img src="{{ "images/UW.svg" | absURL }}" alt="UW" style="height:60px;" loading="lazy" />
+            </a>
+
+            <div style="flex-basis:100%; height:0;"></div>
+
+            <a href="https://www.fcu.edu.tw" target="_blank" rel="noopener">
+                <img src="{{ "images/FC.svg" | absURL }}" alt="FC" loading="lazy" />
+            </a>
+
+            <img src="{{ "images/AYXR.svg" | absURL }}" alt="AYXR" style="height:40px;" loading="lazy" />
+        </div>
+
+        <!-- Latest News Section -->
+        <div class="news-section">
+            <h2 class="news-title">Latest News</h2>
+            <div class="news-list">
+                <div class="news-item">
+                    <span class="news-date">[Sep 2025]</span>
+                    <span class="news-content">My Student Challenge Paper <b>NieNie</b> was accepted to <b>UbiComp/ISWC 2025</b>!</span>
+                </div>
+                <div class="news-item">
+                    <span class="news-date">[Sep 2025]</span>
+                    <span class="news-content">My Poster Paper <b>GenLARP</b> was accepted to <b>ISMAR 2025</b>!</span>
+                </div>
+                <div class="news-item">
+                    <span class="news-date">[Sep 2025]</span>
+                    <span class="news-content">Our Paper on <b>Embodied AI Literacy</b> was accepted to <b>ACM TOCE</b>!</span>
+                </div>
+                <div class="news-item">
+                    <span class="news-date">[Aug 2025]</span>
+                    <span class="news-content">My Poster Paper <b>Noetic Dream</b> was accepted to <b>UIST 2025</b>!</span>
+                </div>
+                <div class="news-item">
+                    <span class="news-date">[Aug 2025]</span>
+                    <span class="news-content">My Poster Paper <b>RunPacer</b> was accepted to <b>ASSETS 2025</b>!</span>
+                </div>
+                <div class="news-item">
+                    <span class="news-date">[Aug 2025]</span>
+                    <span class="news-content">Started as Research Staff at <b>NC State University</b>.</span>
+                </div>
+                <div class="news-item">
+                    <span class="news-date">[Jun 2025]</span>
+                    <span class="news-content">Our Paper <b>Design AI for My Community</b> was accepted to <b>ICLS 2025</b>!</span>
+                </div>
+                <div class="news-item">
+                    <span class="news-date">[May 2025]</span>
+                    <span class="news-content">Graduated from <b>University of Rochester</b>.</span>
+                </div>
+                <div class="news-item">
+                    <span class="news-date">[Apr 2025]</span>
+                    <span class="news-content">My Late-Breaking Work <b>Chameleon</b> was accepted to <b>CHI 2025</b>!</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3D Globe -->
+        <div class="globe-wrap">
+            <div id="globeViz"></div>
+        </div>
+
+    </div>
+</div>
+{{- end }}
+
+<!-- Dark Mode Toggle Script -->
+<script>
+    // Check for saved theme preference or default to light mode
+    const currentTheme = localStorage.getItem('theme') || 'light';
+    if (currentTheme === 'dark') {
+        document.body.classList.add('dark-mode');
+    }
+
+    // Toggle theme
+    const themeToggle = document.getElementById('theme-toggle');
+    themeToggle.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+
+        // Save preference
+        const theme = document.body.classList.contains('dark-mode') ? 'dark' : 'light';
+        localStorage.setItem('theme', theme);
+    });
+</script>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+</script>
+
+<!-- Globe.gl Script -->
+<script src="https://unpkg.com/globe.gl"></script>
+<script type="module">
+    // 1) Create globe
+    const GlobeCtor = window.Globe;
+    const el = document.getElementById('globeViz');
+
+    const globe = GlobeCtor()(el)
+        .width(280).height(280)
+        .globeImageUrl('https://cdn.jsdelivr.net/npm/three-globe/example/img/earth-blue-marble.jpg')
+        .bumpImageUrl('https://cdn.jsdelivr.net/npm/three-globe/example/img/earth-topology.png')
+        .backgroundColor('rgba(0,0,0,0)')
+        .showAtmosphere(true).atmosphereColor('#80cfff').atmosphereAltitude(0.18)
+        .pointAltitude(d => 0.05 + Math.log(1 + d.visit_count) * 0.1)
+        .pointColor(d => (d.color || '#39c5ff'))
+        .pointRadius(0.6);
+
+    globe.pointOfView({ lat: 38, lng: -83, altitude: 2.0 }, 0);
+
+    const ctrl = globe.controls();
+    ctrl.enableZoom = false;
+    ctrl.autoRotate = true;
+    ctrl.autoRotateSpeed = 0.5;
+    const d = ctrl.object.position.distanceTo(ctrl.target);
+    ctrl.minDistance = d; ctrl.maxDistance = d;
+
+    // Default test point
+    globe.pointsData([{ lat: 0, lng: 0, size: 0.2, color: '#ffcc00' }]);
+
+    // 2) Supabase connection
+    import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/+esm';
+    const SUPABASE_URL = 'https://aipabrjoayengdkxohcu.supabase.co';
+    const SUPABASE_ANON = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFpcGFicmpvYXllbmdka3hvaGN1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTYzNjk5MjMsImV4cCI6MjA3MTk0NTkyM30.ZEV4BXWfcMaJGMAIaPVdzJpNCdsnYeEFGK0kzkqi0OE';
+    const sb = createClient(SUPABASE_URL, SUPABASE_ANON, { auth: { persistSession: false } });
+
+    // 2.1 Historical points with color cycling
+    try {
+        const palette = [
+            '#ff6600', '#39c5ff', '#66ff66', '#cc33ff',
+            '#ffcc00', '#0099ff', '#ff3366', '#33cc99',
+            '#9966ff', '#ff9933', '#00ccff', '#ff3399',
+            '#66ffcc', '#ccff33', '#ff5050', '#3399ff',
+            '#ffcc66', '#33ffcc', '#ff6699', '#99cc33'
+        ];
+
+        function randomColor() {
+            return palette[Math.floor(Math.random() * palette.length)];
+        }
+
+        const { data: rows, error } = await sb
+            .from('points_with_count')
+            .select('*')
+            .order('ts', { ascending: true })
+            .limit(1000);
+
+        if (error) throw error;
+
+        // Assign color to each point
+        const dbPts = (rows || []).map((r, i) => ({
+            ...r,
+            color: palette[i % palette.length]
+        }));
+
+        globe.pointsData([...(globe.pointsData() || []), ...dbPts]);
+    } catch (e) {
+        console.error('Load points failed:', e);
+    }
+
+    // 2.2 Write current visitor
+    const KEY = 'visit-logged-v2';
+
+    // Get or create session ID (same as footer tracking)
+    let sessionId = sessionStorage.getItem('tracking-session-id');
+    if (!sessionId) {
+        sessionId = crypto.randomUUID();
+        sessionStorage.setItem('tracking-session-id', sessionId);
+    }
+
+    if (!sessionStorage.getItem(KEY)) {
+        try {
+            const res = await fetch('https://get.geojs.io/v1/ip/geo.json', { cache: 'no-store' });
+            const geo = await res.json();
+            const lat = Number(geo.latitude), lng = Number(geo.longitude);
+
+            if (isFinite(lat) && isFinite(lng)) {
+                await sb.from('visits').insert({
+                    lat, lng,
+                    country: geo.country, city: geo.city,
+                    ua: navigator.userAgent, ref: document.referrer, ip: geo.ip,
+                    session_id: sessionId
+                });
+
+                // Add this point to the globe immediately
+                globe.pointsData([
+                    ...(globe.pointsData() || []),
+                    { lat, lng, size: 0.12, color: randomColor(), ts: new Date().toISOString() }
+                ]);
+
+                globe.pointOfView({ lat, lng, altitude: 2.2 }, 1200);
+            }
+        } catch (e) {
+            console.error('Insert visit failed:', e);
+        }
+        sessionStorage.setItem(KEY, '1');
+    }
+
+    // 2.3 Real-time subscription for new visitors
+    const channel = sb.channel('realtime:public:visits')
+        .on('postgres_changes', { event: 'INSERT', schema: 'public', table: 'visits' }, payload => {
+            const row = payload.new;
+            globe.pointsData([
+                ...(globe.pointsData() || []),
+                { lat: row.lat, lng: row.lng, size: 0.12, color: randomColor(), ts: row.ts }
+            ]);
+        })
+        .subscribe();
+</script>
+
+{{- end }}
