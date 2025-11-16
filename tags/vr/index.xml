@@ -1,1 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>VR on Yichen(Andy) Yu</title><link>https://andyyuyc.github.io/tags/vr/</link><description>Recent content in VR on Yichen(Andy) Yu</description><generator>Hugo -- 0.148.2</generator><language>en</language><lastBuildDate>Tue, 19 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://andyyuyc.github.io/tags/vr/index.xml" rel="self" type="application/rss+xml"/><item><title>Noetic Dream: A Personalized VR and Meditation System for Lucid Dream Training</title><link>https://andyyuyc.github.io/papers/paper6/</link><pubDate>Tue, 19 Aug 2025 00:00:00 +0000</pubDate><guid>https://andyyuyc.github.io/papers/paper6/</guid><description>UIST Adjunct ’25: Noetic Dream integrates personalized VR dream reconstruction, anomaly-detection gameplay, and open-monitoring (OM) meditation to train lucid dreaming.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>VR on Yichen(Andy) Yu</title>
+    <link>https://andyyuyc.github.io/tags/vr/</link>
+    <description>Recent content in VR on Yichen(Andy) Yu</description>
+    <generator>Hugo -- 0.148.2</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 19 Aug 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://andyyuyc.github.io/tags/vr/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Noetic Dream: A Personalized VR and Meditation System for Lucid Dream Training</title>
+      <link>https://andyyuyc.github.io/papers/paper6/</link>
+      <pubDate>Tue, 19 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://andyyuyc.github.io/papers/paper6/</guid>
+      <description>UIST Adjunct ’25: Noetic Dream integrates personalized VR dream reconstruction, anomaly-detection gameplay, and open-monitoring (OM) meditation to train lucid dreaming.</description>
+    </item>
+  </channel>
+</rss>
