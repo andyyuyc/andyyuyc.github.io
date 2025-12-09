@@ -173,20 +173,21 @@
     const SUPABASE_ANON = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFpcGFicmpvYXllbmdka3hvaGN1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTYzNjk5MjMsImV4cCI6MjA3MTk0NTkyM30.ZEV4BXWfcMaJGMAIaPVdzJpNCdsnYeEFGK0kzkqi0OE';
     const sb = createClient(SUPABASE_URL, SUPABASE_ANON, { auth: { persistSession: false } });
 
+    // Color palette for points
+    const palette = [
+        '#ff6600', '#39c5ff', '#66ff66', '#cc33ff',
+        '#ffcc00', '#0099ff', '#ff3366', '#33cc99',
+        '#9966ff', '#ff9933', '#00ccff', '#ff3399',
+        '#66ffcc', '#ccff33', '#ff5050', '#3399ff',
+        '#ffcc66', '#33ffcc', '#ff6699', '#99cc33'
+    ];
+
+    function randomColor() {
+        return palette[Math.floor(Math.random() * palette.length)];
+    }
+
     // 2.1 Historical points with color cycling
     try {
-        const palette = [
-            '#ff6600', '#39c5ff', '#66ff66', '#cc33ff',
-            '#ffcc00', '#0099ff', '#ff3366', '#33cc99',
-            '#9966ff', '#ff9933', '#00ccff', '#ff3399',
-            '#66ffcc', '#ccff33', '#ff5050', '#3399ff',
-            '#ffcc66', '#33ffcc', '#ff6699', '#99cc33'
-        ];
-
-        function randomColor() {
-            return palette[Math.floor(Math.random() * palette.length)];
-        }
-
         const { data: rows, error } = await sb
             .from('points_with_count')
             .select('*')
