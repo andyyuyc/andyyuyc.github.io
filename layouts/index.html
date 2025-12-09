@@ -168,7 +168,7 @@
     globe.pointsData([{ lat: 0, lng: 0, size: 0.2, color: '#ffcc00' }]);
 
     // 2) Supabase connection
-    import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/+esm';
+    import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.46.2/+esm';
     const SUPABASE_URL = 'https://aipabrjoayengdkxohcu.supabase.co';
     const SUPABASE_ANON = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFpcGFicmpvYXllbmdka3hvaGN1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTYzNjk5MjMsImV4cCI6MjA3MTk0NTkyM30.ZEV4BXWfcMaJGMAIaPVdzJpNCdsnYeEFGK0kzkqi0OE';
     const sb = createClient(SUPABASE_URL, SUPABASE_ANON, { auth: { persistSession: false } });
