@@ -157,26 +157,28 @@ if (!sessionId) {
 
 // === Visit Recording (once per session) ===
 const VISIT_KEY = 'visit-logged-v2';
-if (!sessionStorage.getItem(VISIT_KEY)) {
-    try {
-        const res = await fetch('https://get.geojs.io/v1/ip/geo.json', { cache: 'no-store' });
-        const geo = await res.json();
-        const lat = Number(geo.latitude), lng = Number(geo.longitude);
+(async function recordVisit() {
+    if (!sessionStorage.getItem(VISIT_KEY)) {
+        try {
+            const res = await fetch('https://get.geojs.io/v1/ip/geo.json', { cache: 'no-store' });
+            const geo = await res.json();
+            const lat = Number(geo.latitude), lng = Number(geo.longitude);
 
-        if (isFinite(lat) && isFinite(lng)) {
-            await sb.from('visits').insert({
-                lat, lng,
-                country: geo.country, city: geo.city,
-                ua: navigator.userAgent, ref: document.referrer, ip: geo.ip,
-                session_id: sessionId
-            });
-            console.log('Visit recorded for session:', sessionId);
+            if (isFinite(lat) && isFinite(lng)) {
+                await sb.from('visits').insert({
+                    lat, lng,
+                    country: geo.country, city: geo.city,
+                    ua: navigator.userAgent, ref: document.referrer, ip: geo.ip,
+                    session_id: sessionId
+                });
+                console.log('Visit recorded for session:', sessionId);
+            }
+        } catch (e) {
+            console.error('Insert visit failed:', e);
         }
-    } catch (e) {
-        console.error('Insert visit failed:', e);
+        sessionStorage.setItem(VISIT_KEY, '1');
     }
-    sessionStorage.setItem(VISIT_KEY, '1');
-}
+})();
 // === End Visit Recording ===
 
 // Track page view

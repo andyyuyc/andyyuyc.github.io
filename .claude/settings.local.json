@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(hugo --logLevel info:*)",
+      "Bash(where:*)"
+    ]
+  }
+}
