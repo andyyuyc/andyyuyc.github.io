@@ -207,15 +207,8 @@
         console.error('Load points failed:', e);
     }
 
-    // 2.2 Write current visitor
-    const KEY = 'visit-logged-v2';
-
-    // Get or create session ID (same as footer tracking)
-    let sessionId = sessionStorage.getItem('tracking-session-id');
-    if (!sessionId) {
-        sessionId = crypto.randomUUID();
-        sessionStorage.setItem('tracking-session-id', sessionId);
-    }
+    // 2.2 Add current visitor point to globe (visit recording now handled in footer.html)
+    const KEY = 'globe-point-added';
 
     if (!sessionStorage.getItem(KEY)) {
         try {
@@ -224,13 +217,6 @@
             const lat = Number(geo.latitude), lng = Number(geo.longitude);
 
             if (isFinite(lat) && isFinite(lng)) {
-                await sb.from('visits').insert({
-                    lat, lng,
-                    country: geo.country, city: geo.city,
-                    ua: navigator.userAgent, ref: document.referrer, ip: geo.ip,
-                    session_id: sessionId
-                });
-
                 // Add this point to the globe immediately
                 globe.pointsData([
                     ...(globe.pointsData() || []),
@@ -240,7 +226,7 @@
                 globe.pointOfView({ lat, lng, altitude: 2.2 }, 1200);
             }
         } catch (e) {
-            console.error('Insert visit failed:', e);
+            console.error('Failed to add point to globe:', e);
         }
         sessionStorage.setItem(KEY, '1');
     }
