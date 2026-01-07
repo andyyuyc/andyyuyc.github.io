@@ -11,6 +11,17 @@
   margin-top: 0.25rem;
 }
 .entry-venue { font-weight: 600; }
+
+/* Social icons spacing */
+.social-icons {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.social-icons a {
+  margin: 0 !important;
+}
 .profile .below-photo img{
   border:none!important; outline:none!important; box-shadow:none!important;
   background:transparent!important; padding:0!important; border-radius:0!important; filter:none!important;
