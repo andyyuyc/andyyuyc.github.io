@@ -171,27 +171,12 @@ body.list:not(:has(.header)) .theme-toggle {
     display: flex;
     flex-direction: column;
     gap: 12px;
-    max-height: 200px;
-    overflow-y: scroll;
-    padding-right: 5px;
 }
 
-.news-list::-webkit-scrollbar {
-    width: 6px;
-}
-
-.news-list::-webkit-scrollbar-track {
-    background: var(--code-bg);
-    border-radius: 3px;
-}
-
-.news-list::-webkit-scrollbar-thumb {
-    background: var(--border);
-    border-radius: 3px;
-}
-
-.news-list::-webkit-scrollbar-thumb:hover {
-    background: var(--secondary);
+.news-section,
+.news-list {
+    overflow: visible !important;
+    max-height: none !important;
 }
 
 .news-item {
@@ -385,6 +370,153 @@ body.dark-mode pre,
 body.dark-mode code {
     background: rgba(255, 255, 255, 0.08) !important;
     color: rgba(255, 255, 255, 0.9) !important;
+}
+
+/* Journey Map */
+.journey-map-section {
+    width: 100%;
+    max-width: 700px;
+    margin: 30px auto 20px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37),
+                inset 0 1px 0 0 rgba(255, 255, 255, 0.3);
+}
+
+.journey-svg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.map-grid line {
+    stroke: #e0e0e0;
+    stroke-width: 0.5;
+}
+
+.map-continents path {
+    fill: #d5d5d5;
+    stroke: #bbb;
+    stroke-width: 0.5;
+}
+
+.journey-line {
+    stroke: #4a90d9;
+    stroke-dasharray: 8, 4;
+}
+
+.journey-map-section {
+    position: relative;
+}
+
+.journey-dot {
+    fill: #e74c3c;
+    stroke: #fff;
+    stroke-width: 2;
+    transition: r 0.2s ease;
+    pointer-events: none;
+}
+
+.journey-dot-hover {
+    fill: transparent;
+    stroke: none;
+    cursor: pointer;
+}
+
+.journey-dot-hover:hover + .journey-dot {
+    r: 7;
+    filter: drop-shadow(0 0 4px rgba(231, 76, 60, 0.6));
+}
+
+.journey-tooltip {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    padding: 8px 14px;
+    border-radius: 10px;
+    font-size: 11px;
+    font-weight: 500;
+    white-space: nowrap;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    transform: translateX(-50%);
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.journey-tooltip-logo {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    filter: none !important;
+    padding: 0 !important;
+}
+
+body.dark-mode .journey-tooltip {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+body.dark-mode .journey-tooltip-logo {
+    filter: none !important;
+}
+
+.journey-leader {
+    stroke: #999;
+    stroke-width: 0.8;
+    stroke-dasharray: 2, 2;
+}
+
+.journey-label {
+    font-size: 11px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    fill: #555;
+    font-weight: 500;
+}
+
+body.dark-mode .journey-map-section {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+body.dark-mode .map-grid line {
+    stroke: rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .map-continents path {
+    fill: rgba(255, 255, 255, 0.15);
+    stroke: rgba(255, 255, 255, 0.2);
+}
+
+body.dark-mode .journey-line {
+    stroke: #5ba3ec;
+}
+
+body.dark-mode .journey-dot {
+    fill: #ff6b6b;
+    stroke: rgba(255, 255, 255, 0.8);
+}
+
+body.dark-mode .journey-leader {
+    stroke: rgba(255, 255, 255, 0.4);
+}
+
+body.dark-mode .journey-label {
+    fill: rgba(255, 255, 255, 0.85);
 }
 
 /* Globe centering */

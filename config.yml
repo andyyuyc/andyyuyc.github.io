@@ -1,5 +1,5 @@
 baseURL: "https://andyyuyc.github.io/"
-title: Yichen(Andy) Yu
+title: Yichen (Andy) Yu
 theme: PaperMod
 
 enableInlineShortcodes: true
@@ -33,7 +33,7 @@ menu:
 
 params:
     description: "This website hosts Andy's information."
-    author: Yichen(Andy) Yu
+    author: Yichen (Andy) Yu
     # googleAnalyticsID: "G-XXXXX"
     DateFormat: "January 2006"
     defaultTheme: light
@@ -57,8 +57,8 @@ params:
     math: true
     profileMode:
           enabled: true
-          title: Yichen(Andy) Yu
-          subtitle: "I am a Research Staff at <a href='https://www.ncsu.edu/' target='_blank'><b>North Carolina State University</b></a>, working with <a href='http://georgiejin.com/' target='_blank'><b>Prof. Qiao Jin</b></a> and Founder of <b>AYXR</b>. My research focuses on Human-Computer Interaction, particularly <b>AR/VR Interactions</b>, <b>CS Education</b>, and <b>Accessibility</b>. Previously, I completed my Master degree at the <a href='https://www.rochester.edu/' target='_blank'><b>University of Rochester</b></a>, where I worked with <a href='https://zhenbai.io/' target='_blank'><b>Prof. Zhen Bai</b></a> and <a href='https://son.rochester.edu/directory/dillondzikowicz/' target='_blank'><b>Prof. Dillon Dzikowicz</b></a>, and have published research at CHI, UIST, Ubicomp, ISMAR and other venues."
+          title: Yichen (Andy) Yu
+          subtitle: "I am a Research Staff at <a href='https://www.ncsu.edu/' target='_blank'><b>North Carolina State University</b></a>, working with <a href='http://georgiejin.com/' target='_blank'><b>Prof. Qiao Jin</b></a>, and collaborating with <a href='https://raynez.art/' target='_blank'><b>Prof. Lei Zhang</b></a> and <a href='https://aprilwang.me/' target='_blank'><b>Prof. April Wang</b></a>. My research focuses on Human-Computer Interaction, particularly <b>AR/VR Interactions</b>, <b>CS Education</b>, and <b>Accessibility</b>. Previously, I completed my Master degree at the <a href='https://www.rochester.edu/' target='_blank'><b>University of Rochester</b></a>, where I worked with <a href='https://zhenbai.io/' target='_blank'><b>Prof. Zhen Bai</b></a> and <a href='https://son.rochester.edu/directory/dillondzikowicz/' target='_blank'><b>Prof. Dillon Dzikowicz</b></a>, and have published research at CHI, UIST, Ubicomp, ISMAR and other venues. And I am also the Founder of <b>AYXR</b>."
 
 
           imageUrl: "picture.JPG"
@@ -105,7 +105,7 @@ params:
         hiddenInList: false
         hiddenInSingle: true
     label:
-      text: "Yichen(Andy) Yu"
+      text: "Yichen (Andy) Yu"
       icon: favicon.ico
       iconHeight: 18
 

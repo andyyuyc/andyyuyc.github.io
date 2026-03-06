@@ -6,7 +6,8 @@
       "Bash(hugo version:*)",
       "Bash(powershell.exe -Command \"hugo version\")",
       "Bash(ls:*)",
-      "Bash(powershell.exe -Command \"Get-Command hugo -ErrorAction SilentlyContinue | Select-Object -ExpandProperty Source\")"
+      "Bash(powershell.exe -Command \"Get-Command hugo -ErrorAction SilentlyContinue | Select-Object -ExpandProperty Source\")",
+      "Bash(wc:*)"
     ]
   }
 }

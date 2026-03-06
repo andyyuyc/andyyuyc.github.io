@@ -32,7 +32,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;  /* 允许自动换行 */
-  gap: 20px;        /* 控制间距 */
+  gap: 30px;        /* 控制间距 */
 }
 .below-photo img {
   height: 40px;
