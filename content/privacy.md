@@ -1,21 +1,22 @@
 ---
-title: "Privacy Policy"
+title: "Privacy Policy — EvenLyrics"
 date: 2026-04-08
 hidemeta: true
-description: "Privacy Policy for AYXR apps"
+description: "Privacy Policy for EvenLyrics - Apple Music"
+url: /evenlyrics/privacy/
 ---
 
 **Effective Date:** April 8, 2026
 
 ## Overview
 
-AYXR ("we", "our", "us") is committed to protecting your privacy. This Privacy Policy explains how we handle information when you use our applications.
+This Privacy Policy describes how **EvenLyrics - Apple Music** ("the App"), developed by AYXR ("we", "our", "us"), handles your information.
 
 ---
 
 ## Information We Collect
 
-Our apps are designed with privacy in mind. We do **not** collect, store, or share any personal information unless explicitly stated within a specific app.
+EvenLyrics is designed with privacy in mind. We do **not** collect, store, or share any personal information.
 
 - **No personal data collection** — We do not require account creation or login.
 - **No tracking** — We do not use analytics or advertising trackers that identify individual users.
@@ -23,21 +24,21 @@ Our apps are designed with privacy in mind. We do **not** collect, store, or sha
 
 ---
 
-## Device Permissions
+## Apple Music Integration
 
-Some of our apps may request access to device features such as the camera, microphone, or motion sensors. These permissions are used solely for app functionality and are processed locally on your device. No data from these features is transmitted to external servers.
+EvenLyrics accesses your Apple Music library and playback data solely to display lyrics. This data is processed locally on your device and is **never** transmitted to external servers.
 
 ---
 
 ## Data Storage
 
-Any data generated within our apps (e.g., settings, preferences) is stored locally on your device. We do not have access to this data.
+Any data generated within the App (e.g., settings, preferences) is stored locally on your device. We do not have access to this data.
 
 ---
 
 ## Children's Privacy
 
-Our apps do not knowingly collect personal information from children under the age of 13. If you believe a child has provided us with personal information, please contact us so we can take appropriate action.
+EvenLyrics does not knowingly collect personal information from children under the age of 13. If you believe a child has provided us with personal information, please contact us so we can take appropriate action.
 
 ---
 
