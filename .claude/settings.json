@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cp \"/Users/andy/Downloads/title_img \\(2\\).png\" \"/Users/andy/Library/Mobile Documents/com~apple~CloudDocs/Work/Website/Personal/static/images/FC.png\")"
+    ],
+    "additionalDirectories": [
+      "/Users/andy/Downloads"
+    ]
+  }
+}
