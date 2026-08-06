@@ -1,10 +1,49 @@
 /* Liquid Glass Design System */
 
-/* Animated Gradient Background - ONLY in dark mode */
+/* Animated Gradient Background */
 @keyframes gradientShift {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
+}
+
+@keyframes lightGradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* ========== TYPOGRAPHY ========== */
+body, .post-content, .entry-content, .profile span,
+.nav a, .logo a, .button-inner, p, li, span,
+h1, h2, h3, h4, h5, h6,
+.entry-title, .post-title, .news-title {
+    font-family: 'Handlee', cursive;
+}
+
+/* Profile subtitle (bio text) */
+.profile_inner > span {
+    font-size: 1.08rem;
+    line-height: 1.75;
+    display: block;
+    margin: 16px 0;
+}
+
+/* Signature font for profile name only */
+.profile h1 {
+    font-family: 'Homemade Apple', cursive;
+    font-weight: 400;
+    font-size: 2rem;
+    letter-spacing: 0.02em;
+    line-height: 1.4;
+}
+
+/* ========== LIGHT MODE BACKGROUND ========== */
+body:not(.dark-mode) {
+    background: linear-gradient(135deg, #f0f4ff 0%, #f5efff 30%, #fff0f8 60%, #eef6ff 100%) !important;
+    background-size: 300% 300%;
+    animation: lightGradientShift 20s ease infinite;
+    background-attachment: fixed;
 }
 
 /* Theme Toggle Button */
@@ -398,4 +437,112 @@ body.dark-mode code {
     height: 280px;
     display: block;
     margin: 0 auto 8px;
+}
+
+/* ========== LIGHT MODE GLASS STYLES ========== */
+
+/* Theme toggle - light mode */
+body:not(.dark-mode) .theme-toggle {
+    background: rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 16px rgba(100, 100, 160, 0.15),
+                inset 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+body:not(.dark-mode) .theme-toggle:hover {
+    background: rgba(255, 255, 255, 0.85);
+    box-shadow: 0 6px 20px rgba(100, 100, 160, 0.22),
+                inset 0 1px 0 rgba(255, 255, 255, 1);
+}
+
+/* Header glass - light mode */
+body:not(.dark-mode) .header,
+body:not(.dark-mode) .nav {
+    background: rgba(255, 255, 255, 0.55) !important;
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    border-bottom: 1px solid rgba(180, 160, 220, 0.15) !important;
+    box-shadow: 0 2px 16px rgba(100, 80, 160, 0.08);
+}
+
+/* Post/paper cards - light mode */
+body:not(.dark-mode) .post-entry,
+body:not(.dark-mode) .paper-entry {
+    background: rgba(255, 255, 255, 0.65) !important;
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    border: 1px solid rgba(200, 190, 240, 0.25) !important;
+    box-shadow: 0 4px 24px rgba(100, 80, 160, 0.08),
+                inset 0 1px 0 rgba(255, 255, 255, 0.9) !important;
+}
+
+body:not(.dark-mode) .post-entry:hover,
+body:not(.dark-mode) .paper-entry:hover {
+    background: rgba(255, 255, 255, 0.85) !important;
+    box-shadow: 0 8px 32px rgba(100, 80, 160, 0.14),
+                inset 0 1px 0 rgba(255, 255, 255, 1) !important;
+}
+
+/* Buttons - light mode */
+body:not(.dark-mode) .button {
+    background: rgba(255, 255, 255, 0.6) !important;
+    border: 1px solid rgba(180, 160, 220, 0.3) !important;
+    box-shadow: 0 4px 16px rgba(100, 80, 160, 0.1),
+                inset 0 1px 0 rgba(255, 255, 255, 0.9) !important;
+}
+
+body:not(.dark-mode) .button:hover {
+    background: rgba(255, 255, 255, 0.85) !important;
+    box-shadow: 0 6px 20px rgba(100, 80, 160, 0.18),
+                inset 0 1px 0 rgba(255, 255, 255, 1) !important;
+}
+
+/* Social icons - light mode */
+body:not(.dark-mode) .social-icons a {
+    background: rgba(255, 255, 255, 0.6) !important;
+    border: 1px solid rgba(180, 160, 220, 0.25) !important;
+    box-shadow: 0 4px 16px rgba(100, 80, 160, 0.08),
+                inset 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+body:not(.dark-mode) .social-icons a:hover {
+    background: rgba(255, 255, 255, 0.9) !important;
+    box-shadow: 0 6px 20px rgba(100, 80, 160, 0.16),
+                inset 0 1px 0 rgba(255, 255, 255, 1);
+}
+
+/* News section - light mode */
+body:not(.dark-mode) .news-section {
+    background: rgba(255, 255, 255, 0.55);
+    border: 1px solid rgba(200, 190, 240, 0.2);
+    box-shadow: 0 4px 24px rgba(100, 80, 160, 0.07),
+                inset 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+/* Below photo logos - light mode */
+body:not(.dark-mode) .below-photo {
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    border: 1px solid rgba(200, 190, 240, 0.2);
+    box-shadow: 0 4px 24px rgba(100, 80, 160, 0.07),
+                inset 0 1px 0 rgba(255, 255, 255, 0.9);
+    border-radius: 16px;
+    padding: 20px !important;
+}
+
+/* Journey map section - light mode */
+body:not(.dark-mode) .journey-map-section {
+    background: rgba(255, 255, 255, 0.55);
+    border: 1px solid rgba(200, 190, 240, 0.2);
+    box-shadow: 0 4px 24px rgba(100, 80, 160, 0.07),
+                inset 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+/* Footer - light mode */
+body:not(.dark-mode) .footer {
+    background: rgba(255, 255, 255, 0.45) !important;
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    border-top: 1px solid rgba(180, 160, 220, 0.15);
 }
