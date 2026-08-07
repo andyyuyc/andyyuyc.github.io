@@ -108,16 +108,6 @@ body.list:not(:has(.header)) .theme-toggle {
     background: transparent !important;
     align-items: center !important;
     text-align: center;
-    max-width: 700px;
-}
-
-.profile .profile_inner img {
-    margin: 0 auto;
-}
-
-.profile .below-photo img {
-    height: 40px !important;
-    width: auto !important;
 }
 
 /* Liquid Glass Buttons */
@@ -186,6 +176,12 @@ body.list:not(:has(.header)) .theme-toggle {
     transform: translateY(-4px);
     box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.45),
                 inset 0 1px 0 0 rgba(255, 255, 255, 0.4) !important;
+}
+
+/* Center nav logo + menu */
+.nav {
+    justify-content: center !important;
+    gap: 24px;
 }
 
 /* Liquid Glass for Navigation Header */
