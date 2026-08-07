@@ -1,3 +1,5 @@
 # Hugo build artifacts
+public/
+docs/
 resources/
 .hugo_build.lock

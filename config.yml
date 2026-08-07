@@ -1,7 +1,6 @@
 baseURL: "https://andyyuyc.github.io/"
 title: Yichen Andy Yu
 theme: PaperMod
-publishDir: docs
 
 enableInlineShortcodes: true
 enableRobotsTXT: true
