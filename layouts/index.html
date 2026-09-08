@@ -20,6 +20,12 @@
     </svg>
 </button>
 
+<!-- Birthday easter egg: 糊塗塌客 fly across the homepage. Set params.birthday in config.yml. -->
+{{- if site.Params.birthday }}
+<div id="birthday-egg" data-birthday="{{ site.Params.birthday }}" aria-hidden="true"></div>
+<script src="{{ "assets/birthday.js" | absURL }}" defer></script>
+{{- end }}
+
 {{- with site.Params.profileMode }}
 <div class="profile">
     <div class="profile_inner">

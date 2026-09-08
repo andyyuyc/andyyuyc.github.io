@@ -36,6 +36,9 @@ menu:
 
 params:
     description: "This website hosts Andy's information."
+    # Easter egg: 糊塗塌客 fly across the homepage on this day. Format "MM-DD";
+    # leave as MM-DD to keep it off. Preview any day with ?birthday=1
+    birthday: "MM-DD"
     author: Yichen Andy Yu
     # googleAnalyticsID: "G-XXXXX"
     DateFormat: "January 2006"
