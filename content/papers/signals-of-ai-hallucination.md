@@ -3,7 +3,9 @@ title: "Signals of AI Hallucination: Designing Hallucination-Aware Cues for Embo
 date: 2026-01-01
 preprint: true
 venue: "Preprint"
-author: ["X. Yang","Y. Zhan","X. He","Y. Huang","<b>Yichen Yu</b>","Z. Wang","N. Matsuda","Qiao Jin"]
+author: ["Xiaoran Yang","Yang Zhan","Xie He","Yuxuan Huang","<b>Yichen Yu</b>","Zhuo Wang","Noboru Matsuda","Qiao Jin"]
+thumbnail: "images/papers/signals-of-ai-hallucination.png"
+pdf: "papers/signals-of-ai-hallucination.pdf"
 tags: ["VR","LLM","Embodied Agents","AI Hallucination"]
 _build:
   render: never
