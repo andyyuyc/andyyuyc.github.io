@@ -8,7 +8,7 @@ author: ["<b>Yichen Yu*</b>","Yifan Jiang*","Mandy Lui","Qiao Jin"]
 description: "ISMAR 2025 Poster: GenLARP leverages large language models to generate interactive worlds and AI-driven characters, enabling immersive live action role play (LARP) for collaborative learning and narrative exploration."
 summary: "GenLARP is an AI-driven LARP system that generates interactive 3D environments and characters in real time using LLMs, supporting immersive narrative role play for education and experiential learning."
 editPost:
-    URL: "https://doi.org/10.1109/ISMAR-Adjunct60698.2025.xxxxx"
+    URL: "https://doi.org/10.1109/ISMAR-Adjunct68609.2025.00178"
     Text: "ISMAR 2025 Adjunct Proceedings"
 
 ---
@@ -33,7 +33,7 @@ The system supports **embodied learning and creativity**, letting players physic
 
 Yu, Yichen, Wang, Qiaoran, & Bai, Zhen. 2025.  
 *GenLARP: Enabling Immersive Live Action Role Play through LLM-Generated Worlds and Characters.*  
-In **ISMAR Adjunct ’25** (IEEE International Symposium on Mixed and Augmented Reality Adjunct), October 15–19, 2025, **[City TBD], [Country TBD]**. IEEE. https://doi.org/10.1109/ISMAR-Adjunct60698.2025.xxxxx  
+In **ISMAR Adjunct ’25** (IEEE International Symposium on Mixed and Augmented Reality Adjunct), October 15–19, 2025, **Daejeon, Republic of Korea**. IEEE. https://doi.org/10.1109/ISMAR-Adjunct68609.2025.00178  
 
 ```BibTeX
 @inproceedings{yu2025genlarp,
@@ -43,6 +43,6 @@ In **ISMAR Adjunct ’25** (IEEE International Symposium on Mixed and Augmented 
   year      = {2025},
   publisher = {IEEE},
   pages     = {1--3},
-  doi       = {10.1109/ISMAR-Adjunct60698.2025.xxxxx},
+  doi       = {10.1109/ISMAR-Adjunct68609.2025.00178},
   isbn      = {978-1-6654-xxxx-x/25}
 }
