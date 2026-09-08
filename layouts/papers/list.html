@@ -1,89 +1,167 @@
 {{- define "main" }}
 
-<header class="page-header">
-    <h1>{{ .Title }}</h1>
-    {{- if .Content }}
-    <div class="pub-intro">{{ .Content }}</div>
-    {{- end }}
-</header>
-
 {{- $all := .RegularPages }}
 {{- $preprints := where $all "Params.preprint" true }}
 {{- $published := where $all "Params.preprint" "!=" true }}
+{{- $groups := $published.GroupByDate "2006" }}
 
-<div class="pub-list">
+<div class="pubs-page">
+    <div class="page-layout">
 
-    {{- with $preprints }}
-    <section class="pub-group">
-        <h2 class="pub-group-label">Preprints &amp; In Submission</h2>
-        {{- range . }}
-        {{- partial "pub_item.html" . }}
-        {{- end }}
-    </section>
-    {{- end }}
+        <aside class="sidebar">
+            <ul class="year-nav">
+                {{- with $preprints }}
+                <li><a href="#year-preprints">Preprints</a></li>
+                {{- end }}
+                {{- range $groups }}
+                <li><a href="#year-{{ .Key }}">{{ .Key }}</a></li>
+                {{- end }}
+            </ul>
+        </aside>
 
-    {{- range $published.GroupByDate "2006" }}
-    <section class="pub-group">
-        <h2 class="pub-group-label">{{ .Key }}</h2>
-        {{- range .Pages }}
-        {{- partial "pub_item.html" . }}
-        {{- end }}
-    </section>
-    {{- end }}
+        <div class="main-content">
+            <h1 class="page-title">{{ .Title }}</h1>
+            {{- if .Content }}
+            <div class="page-intro">{{ .Content }}</div>
+            {{- end }}
 
+            {{- with $preprints }}
+            <section class="year-section" id="year-preprints">
+                <h2 class="year-heading">Preprints</h2>
+                {{- range . }}
+                {{- partial "pub_item.html" . }}
+                {{- end }}
+            </section>
+            {{- end }}
+
+            {{- range $groups }}
+            <section class="year-section" id="year-{{ .Key }}">
+                <h2 class="year-heading">{{ .Key }}</h2>
+                {{- range .Pages }}
+                {{- partial "pub_item.html" . }}
+                {{- end }}
+            </section>
+            {{- end }}
+        </div>
+
+    </div>
 </div>
 
 <style>
-.page-header h1 {
-    margin-bottom: 8px;
+/* Wider container than the site default, to make room for the year rail. */
+body:has(.pubs-page) .main {
+    max-width: calc(940px + var(--gap) * 2);
 }
 
-.pub-intro {
-    color: var(--secondary);
-    font-size: 15px;
-    line-height: 1.6;
-}
-
-.pub-list {
+.page-layout {
     display: flex;
-    flex-direction: column;
-    gap: 34px;
-    margin-top: 28px;
+    gap: 2rem;
+    padding: 1rem 0 2rem;
 }
 
-.pub-group-label {
-    font-size: 14px;
-    font-weight: 700;
-    letter-spacing: 0.09em;
-    text-transform: uppercase;
+.sidebar {
+    flex-shrink: 0;
+    width: 150px;
+}
+
+.year-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0.75rem;
+    position: sticky;
+    top: 24px;
+    background: rgba(255, 255, 255, 0.28);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 1rem;
+    box-shadow: 0 4px 16px rgba(31, 38, 135, 0.14),
+                inset 0 1px 0 rgba(255, 255, 255, 0.5);
+    overflow: hidden;
+}
+
+.year-nav li {
+    list-style: none;
+    border-left: 3px solid var(--border);
+}
+
+.year-nav li.active {
+    border-left-color: #dc3545;
+}
+
+.year-nav a {
+    display: block;
+    padding: 0.28rem 0.75rem;
+    font-size: 15px;
     color: var(--secondary);
-    margin: 0 0 14px;
-    padding-bottom: 8px;
-    border-bottom: 1px solid var(--border);
+    text-decoration: none;
 }
 
-.pub-item {
-    padding: 14px 0;
-    border-bottom: 1px solid var(--border);
+.year-nav li.active a {
+    color: #dc3545;
 }
 
-.pub-item:last-child {
-    border-bottom: none;
-}
-
-.pub-title {
-    font-size: 17px;
-    font-weight: 600;
-    line-height: 1.4;
-    margin: 0 0 6px;
+.year-nav a:hover {
     color: var(--primary);
 }
 
+.main-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.page-title {
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin: 0 0 0.5rem;
+    color: var(--primary);
+}
+
+.page-intro {
+    color: var(--secondary);
+    font-size: 15px;
+    margin-bottom: 2rem;
+}
+
+.year-section {
+    margin-bottom: 3rem;
+    scroll-margin-top: 24px;
+}
+
+.year-heading {
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: var(--primary);
+    margin: 0 0 1.4rem;
+}
+
+.pub-item {
+    margin-bottom: 1.9rem;
+}
+
+.pub-title {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.45;
+    margin: 0 0 0.375rem;
+    color: var(--primary);
+}
+
+.pub-title a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.pub-title a:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
 .pub-authors {
-    font-size: 14px;
-    line-height: 1.55;
+    font-size: 15px;
+    line-height: 1.5;
     color: var(--content);
-    margin: 0 0 5px;
+    margin: 0 0 0.25rem;
 }
 
 /* Handlee ships only weight 400, so <b> alone is nearly invisible here.
@@ -97,39 +175,118 @@
 }
 
 .pub-venue {
-    font-size: 14px;
+    font-size: 15px;
     font-style: italic;
-    color: var(--secondary);
+    color: var(--content);
+    margin-bottom: 0.5rem;
 }
 
 .pub-links {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
-    margin-top: 9px;
+    gap: 0.375rem;
 }
 
-.pub-links a {
-    font-size: 12px;
-    font-weight: 600;
-    letter-spacing: 0.03em;
-    padding: 3px 11px;
-    border: 1px solid var(--border);
-    border-radius: 999px;
-    color: var(--secondary);
-    text-decoration: none;
-    transition: color .2s ease, border-color .2s ease;
-}
-
-.pub-links a:hover {
+.pub-link {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.25rem 0.7rem;
+    font-size: 13px;
     color: var(--primary);
-    border-color: var(--secondary);
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 999px;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5),
+                0 1px 3px rgba(0, 0, 0, 0.06);
+    transition: background .2s, box-shadow .2s;
 }
 
-@media (max-width: 600px) {
-    .pub-title { font-size: 16px; }
-    .pub-authors, .pub-venue { font-size: 13px; }
+.pub-link:hover {
+    background: rgba(255, 255, 255, 0.75);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6),
+                0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+body.dark-mode .year-nav,
+body.dark-mode .pub-link {
+    background: rgba(255, 255, 255, 0.07);
+    border-color: rgba(255, 255, 255, 0.14);
+}
+
+body.dark-mode .pub-link:hover {
+    background: rgba(255, 255, 255, 0.14);
+}
+
+@media (max-width: 768px) {
+    .page-layout {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .year-nav {
+        position: static;
+        display: flex;
+        flex-direction: row;
+        gap: 0.25rem;
+        overflow-x: auto;
+        padding: 0.5rem;
+    }
+
+    .year-nav li {
+        border-left: none;
+        border-bottom: 3px solid var(--border);
+        flex-shrink: 0;
+    }
+
+    .year-nav li.active {
+        border-left-color: transparent;
+        border-bottom-color: #dc3545;
+    }
+
+    .page-title {
+        font-size: 2rem;
+    }
 }
 </style>
+
+<script>
+(function () {
+    var links = document.querySelectorAll('.year-nav a');
+    var sections = document.querySelectorAll('.year-section');
+    if (!links.length) return;
+
+    links.forEach(function (link) {
+        link.addEventListener('click', function (e) {
+            e.preventDefault();
+            var target = document.getElementById(this.getAttribute('href').slice(1));
+            if (target) {
+                window.scrollTo({
+                    top: target.getBoundingClientRect().top + window.pageYOffset - 24,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+
+    function updateActiveYear() {
+        var current = sections.length ? sections[0].id : '';
+        sections.forEach(function (section) {
+            if (window.pageYOffset >= section.offsetTop - 60) current = section.id;
+        });
+        links.forEach(function (link) {
+            link.parentElement.classList.toggle(
+                'active', link.getAttribute('href') === '#' + current);
+        });
+    }
+
+    window.addEventListener('scroll', updateActiveYear, { passive: true });
+    updateActiveYear();
+})();
+</script>
 
 {{- end }}
