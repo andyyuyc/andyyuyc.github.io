@@ -2,6 +2,7 @@
 title: "GenLARP: Enabling Immersive Live Action Role Play through LLM-Generated Worlds and Characters"
 date: 2025-08-19
 venue: "ISMAR 2025"
+thumbnail: "images/papers/paper7.png"
 tags: ["LLM","XR","Live Action Role Play","Immersive Learning","AI Agents","Generative Environments","ISMAR"]
 author: ["<b>Yichen Yu*</b>","Yifan Jiang*","Mandy Lui","Qiao Jin"]
 description: "ISMAR 2025 Poster: GenLARP leverages large language models to generate interactive worlds and AI-driven characters, enabling immersive live action role play (LARP) for collaborative learning and narrative exploration."

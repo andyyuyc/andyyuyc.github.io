@@ -2,6 +2,7 @@
 title: "RunPacer: A Smartwatch-Based Vibrotactile Feedback System for Symmetric Co-Running by Visually Impaired Individuals and Guides"
 date: 2025-08-19
 venue: "ASSETS 2025"
+thumbnail: "images/papers/paper4.png"
 tags: ["Accessibility","Assistive Technology","Vibrotactile Feedback","Wearable Computing","Haptic Interaction","Co-running","Smartwatch"]
 author: ["<b>Yichen Yu*</b>","Huan-Song Xu*","Ming-Yen Lin"]
 description: "ASSETS 2025 poster: RunPacer, a smartwatch-based vibrotactile feedback system that synchronizes cadence between visually impaired runners and guides to enhance safety, autonomy, and shared agency."

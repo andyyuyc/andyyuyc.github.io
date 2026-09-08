@@ -2,6 +2,7 @@
 title: "Noetic Dream: A Personalized VR and Meditation System for Lucid Dream Training"
 date: 2025-08-19
 venue: "UIST Adjunct 2025"
+thumbnail: "images/papers/paper6.png"
 tags: ["Lucid Dreaming","VR","Meditation","Affective Computing","LLM","Embodied Interaction","Personalization","Unity","Mental Health"]
 author: ["Qiaoran Wang*","<b>Yichen Yu*</b>"]
 description: "UIST Adjunct ’25: Noetic Dream integrates personalized VR dream reconstruction, anomaly-detection gameplay, and open-monitoring (OM) meditation to train lucid dreaming."

@@ -2,6 +2,7 @@
 title: "Design AI for My Community: A Case Study of Collaborative Learning in a Freedom-to-Read Summer Camp"
 date: 2025-06-01
 venue: "ICLS 2025"
+thumbnail: "images/papers/paper1.png"
 tags: ["AI literacy","critical pedagogy","community-based co-design","recommendation systems","embodied learning","youth"]
 author: ["Xiaofei Zhou","Yunfan Gong","<b>Yichen Yu</b>","Yi Zhang","Jeremy Smith","Zhen Bai"]
 description: "Case study of a summer camp—‘Protect the Freedom to READ’—that engaged middle school students in co-designing AI for their community, transferring AI literacy into higher-order skills through critical pedagogy and embodied tools (BeeTrap, Briteller)."

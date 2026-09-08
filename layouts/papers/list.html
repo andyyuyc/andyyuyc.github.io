@@ -136,7 +136,34 @@ body:has(.pubs-page) .main {
 }
 
 .pub-item {
-    margin-bottom: 1.9rem;
+    display: flex;
+    gap: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.pub-thumb {
+    flex-shrink: 0;
+    width: 130px;
+}
+
+.pub-thumb img {
+    width: 100%;
+    display: block;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08),
+                0 0 0 1px rgba(0, 0, 0, 0.04);
+}
+
+/* Entries with no first-page render keep the column width so every title
+   lines up, but draw nothing - an empty card reads as a broken image. */
+.pub-thumb-placeholder {
+    width: 100%;
+}
+
+.pub-info {
+    flex: 1;
+    min-width: 0;
 }
 
 .pub-title {
@@ -214,6 +241,11 @@ body.dark-mode .pub-link {
     border-color: rgba(255, 255, 255, 0.14);
 }
 
+body.dark-mode .pub-thumb img {
+    border-color: rgba(255, 255, 255, 0.12);
+    filter: brightness(0.88);
+}
+
 body.dark-mode .pub-link:hover {
     background: rgba(255, 255, 255, 0.14);
 }
@@ -246,6 +278,10 @@ body.dark-mode .pub-link:hover {
     .year-nav li.active {
         border-left-color: transparent;
         border-bottom-color: #dc3545;
+    }
+
+    .pub-thumb {
+        width: 92px;
     }
 
     .page-title {

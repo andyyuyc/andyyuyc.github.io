@@ -2,6 +2,7 @@
 title: "Structural Heart Abnormalities Are Prevalent on the 12-Lead Electrocardiogram Among Firefighters"
 date: 2025-08-01
 venue: "JOEM"
+thumbnail: "images/papers/paper2.png"
 tags: ["firefighters","ECG","structural heart abnormalities","sudden cardiac death","occupational health","cardiology"]
 author: ["Alexander W. Bae","Chi-Ju Lai","<b>Yichen Yu</b>","Nicole Krupa","David Hostler","Wai Cheong Tam","Mary G. Carey","Wendy M. Brunner","Dillon J. Dzikowicz"]
 description: "Journal of Occupational and Environmental Medicine (Aug 2025): Routine 12-lead ECG screening among firefighters revealed prevalent conduction abnormalities and coronary indicators (2011–2019)."

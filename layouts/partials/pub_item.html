@@ -1,26 +1,35 @@
 {{- $pdf := .Resources.GetMatch "*.pdf" }}
 <article class="pub-item">
-    <h3 class="pub-title">
-        {{- if .RelPermalink }}<a href="{{ .RelPermalink }}">{{ .Title }}</a>
-        {{- else }}{{ .Title }}{{ end }}
-    </h3>
-    {{- with .Params.author }}
-    <div class="pub-authors">{{ delimit . ", " | safeHTML }}</div>
-    {{- end }}
-    {{- with .Params.venue }}
-    <div class="pub-venue">{{ . }}</div>
-    {{- end }}
-    <div class="pub-links">
-        {{- with $pdf }}
-        <a href="{{ .RelPermalink }}" class="pub-link" target="_blank" rel="noopener">pdf</a>
+    <div class="pub-thumb">
+        {{- with .Params.thumbnail }}
+        <img src="{{ . | absURL }}" alt="First page of {{ $.Title }}" loading="lazy">
+        {{- else }}
+        <div class="pub-thumb-placeholder"></div>
         {{- end }}
-        {{- with .Params.editPost.URL }}
-        {{- $label := "link" }}
-        {{- if in . "arxiv.org" }}{{ $label = "arXiv" }}
-        {{- else if in . "dl.acm.org" }}{{ $label = "acm" }}
-        {{- else if in . "ieee" }}{{ $label = "ieee" }}
-        {{- else if in . "doi.org" }}{{ $label = "doi" }}{{ end }}
-        <a href="{{ . }}" class="pub-link" target="_blank" rel="noopener">{{ $label }}</a>
+    </div>
+    <div class="pub-info">
+        <h3 class="pub-title">
+            {{- if .RelPermalink }}<a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            {{- else }}{{ .Title }}{{ end }}
+        </h3>
+        {{- with .Params.author }}
+        <div class="pub-authors">{{ delimit . ", " | safeHTML }}</div>
         {{- end }}
+        {{- with .Params.venue }}
+        <div class="pub-venue">{{ . }}</div>
+        {{- end }}
+        <div class="pub-links">
+            {{- with $pdf }}
+            <a href="{{ .RelPermalink }}" class="pub-link" target="_blank" rel="noopener">pdf</a>
+            {{- end }}
+            {{- with .Params.editPost.URL }}
+            {{- $label := "link" }}
+            {{- if in . "arxiv.org" }}{{ $label = "arXiv" }}
+            {{- else if in . "dl.acm.org" }}{{ $label = "acm" }}
+            {{- else if in . "ieee" }}{{ $label = "ieee" }}
+            {{- else if in . "doi.org" }}{{ $label = "doi" }}{{ end }}
+            <a href="{{ . }}" class="pub-link" target="_blank" rel="noopener">{{ $label }}</a>
+            {{- end }}
+        </div>
     </div>
 </article>

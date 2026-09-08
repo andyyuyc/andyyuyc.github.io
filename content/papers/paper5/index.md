@@ -2,6 +2,7 @@
 title: "NieNie: Adaptive Rhythmic System for Stress Relief with LLM-Based Guidance"
 date: 2025-08-19
 venue: "Ubicomp/ISWC 2025"
+thumbnail: "images/papers/paper5.png"
 tags: ["Stress Regulation","Affective Computing","Biofeedback","Embodied Interaction","LLM","Mental Health","Wearables","Unity"]
 author: ["<b>Yichen Yu*</b>","Qiaoran Wang*"]
 description: "ISWC 2025: NieNie, an adaptive rhythmic system combining stress detection, biofeedback, and LLM-based guidance through interactive squeezing gameplay."
