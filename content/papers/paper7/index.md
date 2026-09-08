@@ -6,10 +6,6 @@ tags: ["LLM","XR","Live Action Role Play","Immersive Learning","AI Agents","Gene
 author: ["<b>Yichen Yu*</b>","Yifan Jiang*","Mandy Lui","Qiao Jin"]
 description: "ISMAR 2025 Poster: GenLARP leverages large language models to generate interactive worlds and AI-driven characters, enabling immersive live action role play (LARP) for collaborative learning and narrative exploration."
 summary: "GenLARP is an AI-driven LARP system that generates interactive 3D environments and characters in real time using LLMs, supporting immersive narrative role play for education and experiential learning."
-cover:
-    image: "paper7.png"
-    alt: "GenLARP immersive LARP environment"
-    relative: true
 editPost:
     URL: "https://doi.org/10.1109/ISMAR-Adjunct60698.2025.xxxxx"
     Text: "ISMAR 2025 Adjunct Proceedings"
@@ -29,12 +25,6 @@ editPost:
 **GenLARP** is a generative AI system that enables immersive live action role play (LARP) in extended reality. It dynamically creates **3D environments** and **AI-driven characters** using large language models (LLMs), allowing participants to collaboratively co-create narratives, interact with adaptive non-player characters, and explore emergent scenarios.  
 
 The system supports **embodied learning and creativity**, letting players physically enact roles while the AI adapts plots, environments, and dialogue in real time. We present the design framework, early prototype implementation in Unity, and opportunities for using GenLARP in education, training, and collaborative storytelling. This poster highlights challenges of balancing narrative freedom, technical constraints, and ethical concerns in AI-mediated role play.
-
----
-
-##### Figure
-
-![alt](paper7.png)
 
 ---
 

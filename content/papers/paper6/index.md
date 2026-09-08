@@ -6,10 +6,6 @@ tags: ["Lucid Dreaming","VR","Meditation","Affective Computing","LLM","Embodied 
 author: ["Qiaoran Wang*","<b>Yichen Yu*</b>"]
 description: "UIST Adjunct ’25: Noetic Dream integrates personalized VR dream reconstruction, anomaly-detection gameplay, and open-monitoring (OM) meditation to train lucid dreaming."
 summary: "A personalized VR + OM meditation system that reconstructs users’ dream scenes via LLM assistance, gamifies reality testing, and guides intent reinforcement to increase lucid dream frequency."
-cover:
-    image: "paper6.jpg"
-    alt: "Noetic Dream VR lucid-dream training overview"
-    relative: true
 editPost:
     URL: "https://doi.org/10.1145/3746058.3758424"
     Text: "UIST Adjunct ’25 Proceedings"
@@ -27,12 +23,6 @@ editPost:
 ##### Abstract
 
 Lucid dreaming requires metacognitive awareness and persistent training, making it hard to attain with static, one-size-fits-all tools. **Noetic Dream** proposes a personalized, non‑invasive training system that integrates (1) **LLM‑assisted dream replay** to reconstruct users’ own dream scenes in VR, (2) **gamified reality detection** with designed “surreal anomalies” to cultivate dream awareness, and (3) **open‑monitoring (OM) meditation** with multimodal guidance (visual, auditory, haptics) to stabilize attention and implant lucid intent. Implemented in Unity for Meta Quest 3, the system records interaction data for longitudinal modeling and adaptively adjusts content, aiming to increase lucid dream frequency and quality.
-
----
-
-##### Figure
-
-![alt](paper6.jpg)
 
 ---
 

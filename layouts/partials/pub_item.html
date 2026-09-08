@@ -1,0 +1,26 @@
+{{- $pdf := .Resources.GetMatch "*.pdf" }}
+<article class="pub-item">
+    <h3 class="pub-title">{{ .Title }}</h3>
+    {{- with .Params.author }}
+    <p class="pub-authors">{{ delimit . ", " | safeHTML }}</p>
+    {{- end }}
+    {{- with .Params.venue }}
+    <div class="pub-venue">{{ . }}</div>
+    {{- end }}
+    <div class="pub-links">
+        {{- with .Params.editPost.URL }}
+        {{- $label := "Publisher" }}
+        {{- if in . "arxiv.org" }}{{ $label = "arXiv" }}
+        {{- else if in . "dl.acm.org" }}{{ $label = "ACM DL" }}
+        {{- else if in . "ieee" }}{{ $label = "IEEE" }}
+        {{- else if in . "doi.org" }}{{ $label = "DOI" }}{{ end }}
+        <a href="{{ . }}" target="_blank" rel="noopener">{{ $label }}</a>
+        {{- end }}
+        {{- with $pdf }}
+        <a href="{{ .RelPermalink }}" target="_blank" rel="noopener">PDF</a>
+        {{- end }}
+        {{- if .RelPermalink }}
+        <a href="{{ .RelPermalink }}">Details &rarr;</a>
+        {{- end }}
+    </div>
+</article>

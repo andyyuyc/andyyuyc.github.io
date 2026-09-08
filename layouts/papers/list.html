@@ -1,0 +1,135 @@
+{{- define "main" }}
+
+<header class="page-header">
+    <h1>{{ .Title }}</h1>
+    {{- if .Content }}
+    <div class="pub-intro">{{ .Content }}</div>
+    {{- end }}
+</header>
+
+{{- $all := .RegularPages }}
+{{- $preprints := where $all "Params.preprint" true }}
+{{- $published := where $all "Params.preprint" "!=" true }}
+
+<div class="pub-list">
+
+    {{- with $preprints }}
+    <section class="pub-group">
+        <h2 class="pub-group-label">Preprints &amp; In Submission</h2>
+        {{- range . }}
+        {{- partial "pub_item.html" . }}
+        {{- end }}
+    </section>
+    {{- end }}
+
+    {{- range $published.GroupByDate "2006" }}
+    <section class="pub-group">
+        <h2 class="pub-group-label">{{ .Key }}</h2>
+        {{- range .Pages }}
+        {{- partial "pub_item.html" . }}
+        {{- end }}
+    </section>
+    {{- end }}
+
+</div>
+
+<style>
+.page-header h1 {
+    margin-bottom: 8px;
+}
+
+.pub-intro {
+    color: var(--secondary);
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.pub-list {
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+    margin-top: 28px;
+}
+
+.pub-group-label {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--secondary);
+    margin: 0 0 14px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border);
+}
+
+.pub-item {
+    padding: 14px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.pub-item:last-child {
+    border-bottom: none;
+}
+
+.pub-title {
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 1.4;
+    margin: 0 0 6px;
+    color: var(--primary);
+}
+
+.pub-authors {
+    font-size: 14px;
+    line-height: 1.55;
+    color: var(--content);
+    margin: 0 0 5px;
+}
+
+/* Handlee ships only weight 400, so <b> alone is nearly invisible here.
+   Underline the author's own name instead, as academic CVs commonly do. */
+.pub-authors b {
+    font-weight: 700;
+    color: var(--primary);
+    text-decoration: underline;
+    text-decoration-thickness: 1.5px;
+    text-underline-offset: 3px;
+}
+
+.pub-venue {
+    font-size: 14px;
+    font-style: italic;
+    color: var(--secondary);
+}
+
+.pub-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 9px;
+}
+
+.pub-links a {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    padding: 3px 11px;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    color: var(--secondary);
+    text-decoration: none;
+    transition: color .2s ease, border-color .2s ease;
+}
+
+.pub-links a:hover {
+    color: var(--primary);
+    border-color: var(--secondary);
+}
+
+@media (max-width: 600px) {
+    .pub-title { font-size: 16px; }
+    .pub-authors, .pub-venue { font-size: 13px; }
+}
+</style>
+
+{{- end }}

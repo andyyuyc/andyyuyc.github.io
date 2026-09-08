@@ -6,10 +6,6 @@ tags: ["Stress Regulation","Affective Computing","Biofeedback","Embodied Interac
 author: ["<b>Yichen Yu*</b>","Qiaoran Wang*"]
 description: "ISWC 2025: NieNie, an adaptive rhythmic system combining stress detection, biofeedback, and LLM-based guidance through interactive squeezing gameplay."
 summary: "NieNie is an adaptive system that combines wearable-based stress detection, rhythm generation, and LLM-driven guidance to support stress relief through embodied interaction. Presented at ISWC 2025."
-cover:
-    image: "paper5.png"
-    alt: "NieNie system overview"
-    relative: true
 editPost:
     URL: "https://doi.org/10.1145/3714394.3750586"
     Text: "Ubicomp/ISWC 2025 Proceedings"
@@ -29,12 +25,6 @@ editPost:
 Today’s young people face increasing psychological stress due to academic pressure, social isolation, and digital distractions. Traditional stress management apps often rely on static scripts, limiting their effectiveness. **NieNie** introduces an adaptive rhythmic system that combines wearable-based stress detection, rhythm biofeedback, and real-time guidance from large language models (LLMs).  
 
 By connecting physiological signals (e.g., HRV) with interactive squeezing gameplay, NieNie dynamically generates rhythm-based interventions and supportive language prompts. This embodied loop fosters immersive emotional regulation, offering a playful yet effective approach to stress relief. Preliminary studies highlight its potential to transform stress management into an adaptive, engaging, and scalable experience.
-
----
-
-##### Figure
-
-![alt](paper5.png)
 
 ---
 
