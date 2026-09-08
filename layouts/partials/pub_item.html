@@ -1,4 +1,7 @@
-{{- $pdf := .Resources.GetMatch "*.pdf" }}
+{{- /* PDF lives either inside the page bundle or in static/papers via a `pdf` param */}}
+{{- $pdf := "" }}
+{{- with .Resources.GetMatch "*.pdf" }}{{ $pdf = .RelPermalink }}{{ end }}
+{{- with .Params.pdf }}{{ $pdf = . | absURL }}{{ end }}
 <article class="pub-item">
     <div class="pub-thumb">
         {{- with .Params.thumbnail }}
@@ -20,7 +23,7 @@
         {{- end }}
         <div class="pub-links">
             {{- with $pdf }}
-            <a href="{{ .RelPermalink }}" class="pub-link" target="_blank" rel="noopener">pdf</a>
+            <a href="{{ . }}" class="pub-link" target="_blank" rel="noopener">pdf</a>
             {{- end }}
             {{- with .Params.editPost.URL }}
             {{- $label := "link" }}

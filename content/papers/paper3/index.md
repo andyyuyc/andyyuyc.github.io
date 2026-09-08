@@ -1,7 +1,8 @@
 ---
-title: "Chameleon: Unobtrusive Substitution of Real-World Obstacles in VR"
+title: "Chameleon: Unobtrusive Substitution of Real-World Obstacles in VR with Risk-Level-Aware Adaptation"
 date: 2025-04-06
 venue: "CHI EA 2025"
+thumbnail: "images/papers/paper3.png"
 tags: ["Virtual Reality","Accessibility","Safety","HCI","Immersive Learning"]
 author: ["<b>Yichen(Andy) Yu</b>", "Qiao(Georgie) Jin"]
 description: "Chameleon is a risk-level–aware system that unobtrusively substitutes real-world obstacles inside VR, preserving immersion while improving safety and accessibility. Accepted to CHI EA 2025."
