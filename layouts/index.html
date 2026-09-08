@@ -22,7 +22,9 @@
 
 <!-- Birthday easter egg: 糊塗塌客 fly across the homepage. Set params.birthday in config.yml. -->
 {{- if site.Params.birthday }}
-<div id="birthday-egg" data-birthday="{{ site.Params.birthday }}" aria-hidden="true"></div>
+{{- $birthdayBird := site.Params.birthdayBird | default "images/woodstock.png" }}
+<div id="birthday-egg" data-birthday="{{ site.Params.birthday }}"
+     data-bird="{{ $birthdayBird | absURL }}" data-bird-flap="{{ eq $birthdayBird "images/woodstock.png" }}" aria-hidden="true"></div>
 <script src="{{ "assets/birthday.js" | absURL }}" defer></script>
 {{- end }}
 

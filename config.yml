@@ -38,7 +38,9 @@ params:
     description: "This website hosts Andy's information."
     # Easter egg: 糊塗塌客 fly across the homepage on this day. Format "MM-DD";
     # leave as MM-DD to keep it off. Preview any day with ?birthday=1
-    birthday: "MM-DD"
+    birthday: "09-09"
+    # Woodstock artwork for the birthday animation; leave empty to use this default.
+    birthdayBird: "images/woodstock.png"
     author: Yichen Andy Yu
     # googleAnalyticsID: "G-XXXXX"
     DateFormat: "January 2006"

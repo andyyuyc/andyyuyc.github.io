@@ -1,0 +1,18 @@
+woodstock.png
+
+Woodstock artwork from the official Japanese Snoopy website:
+https://www.snoopy.co.jp/characters/woodstock/
+Original image (saved without modification):
+https://www.snoopy.co.jp/pntswp/wp-content/uploads/2016/04/img_woodstock.png
+
+The birthday animation reuses this PNG in SVG body/wing clips and rotates the
+wing with CSS. A short connecting outline closes the body behind the moving
+wing. This website animation is custom, not an original Peanuts animation.
+
+Flight motion reference, viewed from the official Peanuts GIPHY account:
+https://giphy.com/gifs/peanuts-youre-not-elected-charlie-brown-Ob4TyL7tZVk08
+The short climb, loss of balance, tumble and drop inspired the flight timing.
+The midair recovery and randomized paths are adaptations for this website.
+
+Character and artwork copyright: Peanuts Worldwide LLC.
+This third-party artwork is not covered by the repository's code license.
